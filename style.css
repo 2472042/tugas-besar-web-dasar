@@ -1,16 +1,26 @@
 #nav {
-    background-color: #ffffff;
     display:flex;
     flex-direction: row;
-    font-size: 25px;
+    font-size: 20px;
     font-weight:bold;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 100px;
 }  
 
+#menus 
+{
+    background-color: #F16767;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+}
+
 #nav a {
-  float: left;
-  color: #1c1c1c;
+  color: white;
   text-align: center;
-  padding: 36px;
   text-decoration: none; 
 }  
 
