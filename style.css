@@ -1,4 +1,12 @@
 
+<<<<<<< Updated upstream
+=======
+body
+{
+    margin: 0;
+}
+
+>>>>>>> Stashed changes
 #nav {
     display:flex;
     flex-direction: row;
