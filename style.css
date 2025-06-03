@@ -1,12 +1,4 @@
 
-<<<<<<< Updated upstream
-=======
-body
-{
-    margin: 0;
-}
-
->>>>>>> Stashed changes
 #nav {
     display:flex;
     flex-direction: row;
@@ -38,7 +30,7 @@ body
 #nav a:hover {
   background-color: white;
   color: #F16767;
-  border-radius: 15px;
+  border-radius: 12px;
   padding: 5px;
 }  
 #nav a.active {
@@ -47,25 +39,39 @@ body
   padding: 5px;
 }
 
+footer 
+{
+    background-color: #FFA3A3;
+    padding: 2vh;
+    text-align: center;
+    background-size: cover;
+    align-self: flex-end;
+    width: 100vw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+
 /* home */
 
-.bg-light{
+.bg{
     text-align: center;
     background-image: url(img/HomeBG.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    /* change to fill if phone */
 }
 .korea{
   color: #FFF085;
-  margin-top: 200px;
+  margin-top: 10%;
 }
 #ing{
-  font-size: 7em;
-  font-weight: bolder;
+  font-size: 4em;
+  font-family: 'Alfa Slab One';
 }
 #kor{
-  font-size: 5em;
-  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Alfa Slab One';
 }
 
 
@@ -76,15 +82,3 @@ body
 
 
 /* history */
-.judul {
-  color: #F16767;
-  font-size: 4em;
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-}
-
-hr {
-  background-color: #F16767;
-  height: 5px;
-}
