@@ -19,11 +19,40 @@
             <a href="menu.html">Menu</a>
             <a href="about.html">About</a>
             <a href="history.html">History</a>
+            <a href="review.html">Review</a>
         </div>
     </div>
     <div class="korea">
-        <p id="ing">Seoul Explorer</p>
-        <p id="kor">서울 탐험가</p>
+        <p id="ing"></p>
+        <p id="kor"></p>
     </div>
+    <script>
+        function typeBounce(text, elementId, delay=150) {
+            let i = 0;
+            let target = document.getElementById(elementId);
+            function typing() {
+                if (i < text.length) {
+                let span = document.createElement("span");
+                if (text.charAt(i) === " ") {
+                    span.innerHTML = "&nbsp;";
+                } else {
+                    span.textContent = text.charAt(i);
+                }
+                span.classList.add("bounce");
+                target.appendChild(span);
+                i++;
+                setTimeout(typing, delay);
+                }
+            }
+            typing();
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            typeBounce("Seoul Explorer", "ing", 150);
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            typeBounce("서울 탐험가", "kor", 150);
+        });
+    </script>
 </body>
 </html>

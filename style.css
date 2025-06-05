@@ -63,15 +63,26 @@ footer
 }
 .korea{
   color: #FFF085;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 #ing{
-  font-size: 4em;
+  font-size: 6em;
   font-family: 'Alfa Slab One';
 }
 #kor{
-  font-size: 3em;
+  font-size: 4em;
   font-family: 'Alfa Slab One';
+}
+.bounce {
+    display: inline-block;
+    animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 
