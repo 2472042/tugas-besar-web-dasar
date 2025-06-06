@@ -16,11 +16,15 @@
         {
             background-color: #FFFF8D;
         }
-        hr 
-        {
-            background-color: #F16767;
-            height: 5px;
+
+        hr {
+        background-color: #F16767;
+        height: 5px;
+        width: 90%;
+        margin: 20px auto;
+        border: none;
         }
+
         h1 
         {
             text-align: center;
@@ -28,6 +32,38 @@
             color: #F16767;
             font-family: "Alfa Slab One", serif;
             font-size: 30px;
+        }
+
+        .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px; 
+        padding: 10px 30px;
+        margin-top: 40px;
+        }
+
+        .food-item {
+        text-align: center;
+        width: 160px;
+        }
+
+        .food-item img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease; 
+        }
+
+        .food-item img:hover {
+        transform: scale(1.5); 
+        }
+
+        .food-item p {
+        margin-top: 8px;
+        font-weight: bold;
+        font-size: 14px;
         }
     </style>
 </head>
@@ -42,9 +78,45 @@
         </div>
     </div>
     <h1>Sejarah Kuliner Korea</h1>
-    <div>
-        <hr>
+      <div class="timeline">
+    <div class="food-item">
+      <img src="img/kimchi.png" alt="Kimchi" />
+      <p>Abad ke-7</p>
     </div>
+    <div class="food-item">
+      <img src="img/bibimbap.png" alt="Bibimbap" />
+      <p>Abad ke-16</p>
+    </div>
+    <div class="food-item">
+      <img src="img/kimbap.png" alt="Kimbap" />
+      <p>1930</p>
+    </div>
+    <div class="food-item">
+      <img src="img/ramyeon.png" alt="Ramyeon" />
+      <p>1963</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="timeline">
+    <div class="food-item">
+      <img src="img/mandu.png" alt="Mandu" />
+      <p>Abad ke-14</p>
+    </div>
+    <div class="food-item">
+      <img src="img/jajangmyeon.png" alt="Jjajangmyeon" />
+      <p>1905</p>
+    </div>
+    <div class="food-item">
+      <img src="img/topoki.png" alt="Tteokbokki" />
+      <p>1953</p>
+    </div>
+    <div class="food-item">
+      <img src="img/dalgona.png" alt="Dolsot" />
+      <p>1970</p>
+    </div>
+  </div>
 
     <footer>
         Copyright &copy; 2025 · All rights reserved · Seoul Explorer
