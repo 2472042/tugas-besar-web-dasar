@@ -11,6 +11,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: #FF9B17;
+            max-width: 100%;
+        }
+        .container-review {
+            max-width: 100%;
+            text-align: center;
+        }
+        .container-review h1 {
+            font-family: 'Alfa Slab One';
+            color: #FFFF8D;
+            margin-top: 8%;
+            margin-bottom: 2%;
+        }
+        .bottom-container-review {
+            background: #FFFF8D;
+            height: 613px;
+            padding: 12%;
+        }   
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .slider button {
+            font-size: 2rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="nav">
@@ -21,12 +55,45 @@
             <a href="history.html">History</a>
             <a href="review.html">Review</a>
         </div>
-        <div class="container-review">
-            <h1>REVIEW</h1>
-            <div class="bottom-container-review">
-
+    </div>
+    <div class="container-review">
+        <h1>REVIEW</h1>
+        <div class="bottom-container-review">
+            <div class="slider">
+                <button id="prevBtn">&#10094;</button>
+                <img id="sliderImage" src="images/bibimbap.jpg" alt="Food Image" width="300">
+                <button id="nextBtn">&#10095;</button>
             </div>
         </div>
     </div>
+    <script>
+        let images = [];
+        let currentIndex = 0;
+
+        const sliderImage = document.getElementById("sliderImage");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        fetch("Review.json")
+            .then(slide => slide.json())
+            .then(data => {
+                images = data.images;
+                if (images.length > 0) {
+                    sliderImage.src = images[currentIndex];
+                }
+
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    sliderImage.src = images[currentIndex];
+                });
+
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    sliderImage.src = images[currentIndex];
+                });
+            })
+            .catch(error => console.error("Error loading images:", error));
+
+    </script>
 </body>
 </html>
