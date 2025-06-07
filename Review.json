@@ -1,3 +1,12 @@
 {
-    "images": []
+    "images": [
+        "img/kimchi.png",
+        "img/bibimbap.png",
+        "img/kimbap.png",
+        "img/ramyeon.png",
+        "img/mandu.png",
+        "img/jajangmyeon.png",
+        "img/topoki.png",
+        "img/dalgona.png"
+    ]
 }

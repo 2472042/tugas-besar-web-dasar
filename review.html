@@ -23,13 +23,13 @@
         .container-review h1 {
             font-family: 'Alfa Slab One';
             color: #FFFF8D;
-            margin-top: 8%;
+            margin-top: 2%;
             margin-bottom: 2%;
         }
         .bottom-container-review {
             background: #FFFF8D;
             height: 613px;
-            padding: 12%;
+            padding: 5%;
         }   
         .slider {
             display: flex;
@@ -43,6 +43,13 @@
             background-color: transparent;
             border: none;
             cursor: pointer;
+        }
+
+        #sliderImage {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            transition: opacity 0.25s ease-in-out;
         }
     </style>
 </head>
@@ -61,7 +68,7 @@
         <div class="bottom-container-review">
             <div class="slider">
                 <button id="prevBtn">&#10094;</button>
-                <img id="sliderImage" src="images/bibimbap.jpg" alt="Food Image" width="300">
+                <img id="sliderImage" src="img/bibimbap.jpg">
                 <button id="nextBtn">&#10095;</button>
             </div>
         </div>
@@ -82,14 +89,22 @@
                     sliderImage.src = images[currentIndex];
                 }
 
+                const updateImage = (newSrc) => {
+                    sliderImage.style.opacity = 0;
+                    setTimeout(() => {
+                        sliderImage.src = newSrc;
+                        sliderImage.style.opacity = 1;
+                    }, 250); // Fade effect duration
+                };
+
                 prevBtn.addEventListener("click", () => {
                     currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    sliderImage.src = images[currentIndex];
+                    updateImage(images[currentIndex]);
                 });
 
                 nextBtn.addEventListener("click", () => {
                     currentIndex = (currentIndex + 1) % images.length;
-                    sliderImage.src = images[currentIndex];
+                    updateImage(images[currentIndex]);
                 });
             })
             .catch(error => console.error("Error loading images:", error));
