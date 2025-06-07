@@ -199,8 +199,7 @@
 
         #makananView
         {   
-            display: none;
-            /* display: flex; */
+            display: flex;
             flex-direction: row;
         }
 
@@ -241,8 +240,7 @@
         }
         button
         {
-            /* display : block; */
-            display: none;
+            display : block;
             background-color: #F16767;
             color: #FFFF8D;
             border: none;
@@ -253,8 +251,8 @@
         }
         #buttonsResepView
         {
-            display: none;
-            /* display: flex; */
+            /* display: none; */
+            display: flex;
             justify-content: center;
             gap: 500px;
             margin: 20px;
@@ -303,7 +301,12 @@
             flex-direction: column;
             align-items: center;
         }
-    
+        
+        #sumberResep
+        {
+            font-weight: bold;
+            text-align: right;
+        }
 
   </style>
 </head>
@@ -387,17 +390,55 @@
     </footer>
       <script>
         $.getJSON("./datamenu.json", function(data) {
-            console.log(data);
+            $("#buttonsResepView").hide();
+            $("#makananView").hide();
 
-            data.forEach(function(makanan) {
+            data.forEach(function(makanan, index) {
                 var makananCard = `
-                    <div class="card">
+                    <div class="card" data-index="${index}">
                         <img src="${makanan.img}" class="card-img-top">
                         <h5 class="card-title">${makanan.nama}</h5>
                         <p class="card-text">${makanan.deskripsi}</p>
-                    </div>`
+                    </div>`;
                 $("#container").append(makananCard);
-                
+            });
+
+            $(".card").on("click", function() {
+                var index = $(this).data("index");
+                var makanan = data[index];
+
+                $("#container").hide();
+                $("#makananView img").attr("src", makanan.img);
+                $("#makananViewName").text(makanan.nama);
+                $("#makananViewDesc").text(makanan.deskripsi);
+                $("#makananView").show();
+            });
+
+            $("#btnResepView").on("click", function() {
+                var makananName = $("#makananViewName").text();
+                var makanan = data.find(m => m.nama === makananName);
+
+                if (makanan && makanan.bahan && makanan.Instruksi) {
+                    var bahanHtml = makanan.bahan.map(b => `<li>${b}</li>`).join("");
+                    var instruksiHtml = makanan.Instruksi.map((instruksi, i) => {
+                        var imgHtml = makanan.imgInstruksi && makanan.imgInstruksi[i] ? `<div class='centerImage'><img src='${makanan.imgInstruksi[i]}'></div>` : "";
+                        return `<li>${instruksi}${imgHtml}</li>`;
+                    }).join("");
+
+                    $("#resepView ul").html(bahanHtml);
+                    $("#resepView ol").html(instruksiHtml);
+                    $("#sumberResep a").attr("href", makanan.sumber).text(makanan.sumber);
+
+                    $("#makananView").hide();
+                    $("#resepView").show();
+                    $("#buttonsResepView").show();
+                }
+            });
+
+            $("#btnCloseResepView").on("click", function() {
+                $("#resepView").hide();
+                $("#buttonsResepView").hide();
+                $("#makananView").show();
             });
         });
     </script>
