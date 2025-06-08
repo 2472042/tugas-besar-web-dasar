@@ -11,45 +11,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
     <style>
-        body{
+        body {
             background: #FF9B17;
-            max-width: 100%;
+            margin: 0;
+            padding: 0;
         }
         .container-review {
-            max-width: 100%;
             text-align: center;
         }
         .container-review h1 {
             font-family: 'Alfa Slab One';
             color: #FFFF8D;
-            margin-top: 2%;
-            margin-bottom: 2%;
+            margin-top: 5%;
+            margin-bottom: 1%;
         }
-        .bottom-container-review {
-            background: #FFFF8D;
-            height: 613px;
-            padding: 5%;
-        }   
         .slider {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            padding: 50px 0;
         }
-
-        .slider button {
-            font-size: 2rem;
-            background-color: transparent;
-            border: none;
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            background-color: #FFFF8D;
+            border-radius: 20px;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .slider-img {
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            border-radius: 15px;
             cursor: pointer;
         }
-
-        #sliderImage {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            transition: opacity 0.25s ease-in-out;
+        #farPrevImage, #farNextImage {
+            width: 200px;
+            height: 200px;
+            transform: scale(0.7);
+            opacity: 0.5;
+        }
+        #prevImage, #nextImage {
+            width: 200px;
+            height: 200px;
+            transform: scale(0.85);
+            opacity: 0.7;
+        }
+        #currentImage {
+            width: 400px;
+            height: 400px;
+            transform: scale(1.0);
+            opacity: 1;
+        }
+        #currentImage:hover {
+            transform: scale(1.20);
+        }
+        .slider button {
+            font-size: 3rem;
+            background-color: rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            width: 60px;
+            height: 60px;
+            transition: 0.3s ease;
+        }
+        #prevBtn {
+            left: 20px;
+            background: none;
+            color: #FF9B17;
+            font-weight: bold;
+        }
+        #nextBtn {
+            right: 20px;
+            background: none;
+            color: #FF9B17;
+            font-weight: bold;
+        }
+        .slider button:hover {
+            background-color: rgba(0,0,0,0.5);
+            transform: translateY(-50%) scale(1.1);
         }
     </style>
 </head>
@@ -63,52 +115,73 @@
             <a href="review.html">Review</a>
         </div>
     </div>
+
     <div class="container-review">
         <h1>REVIEW</h1>
-        <div class="bottom-container-review">
-            <div class="slider">
+        <div class="slider">
+            <div class="image-container">
                 <button id="prevBtn">&#10094;</button>
-                <img id="sliderImage" src="img/bibimbap.jpg">
+                <img id="farPrevImage" class="slider-img" src="img/bibimbap.jpg">
+                <img id="prevImage" class="slider-img" src="img/bibimbap.jpg">
+                <img id="currentImage" class="slider-img" src="img/bibimbap.jpg">
+                <img id="nextImage" class="slider-img" src="img/bibimbap.jpg">
+                <img id="farNextImage" class="slider-img" src="img/bibimbap.jpg">
                 <button id="nextBtn">&#10095;</button>
             </div>
         </div>
     </div>
+
     <script>
         let images = [];
         let currentIndex = 0;
 
-        const sliderImage = document.getElementById("sliderImage");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
+        const farPrevImage = document.getElementById("farPrevImage");
+        const prevImage = document.getElementById("prevImage");
+        const currentImage = document.getElementById("currentImage");
+        const nextImage = document.getElementById("nextImage");
+        const farNextImage = document.getElementById("farNextImage");
 
         fetch("Review.json")
-            .then(slide => slide.json())
+            .then(response => response.json())
             .then(data => {
                 images = data.images;
                 if (images.length > 0) {
-                    sliderImage.src = images[currentIndex];
+                    updateImages();
                 }
 
-                const updateImage = (newSrc) => {
-                    sliderImage.style.opacity = 0;
-                    setTimeout(() => {
-                        sliderImage.src = newSrc;
-                        sliderImage.style.opacity = 1;
-                    }, 250); // Fade effect duration
-                };
-
-                prevBtn.addEventListener("click", () => {
-                    currentIndex = (currentIndex - 1 + images.length) % images.length;
-                    updateImage(images[currentIndex]);
-                });
-
-                nextBtn.addEventListener("click", () => {
-                    currentIndex = (currentIndex + 1) % images.length;
-                    updateImage(images[currentIndex]);
-                });
+                prevBtn.addEventListener("click", slideLeft);
+                nextBtn.addEventListener("click", slideRight);
+                farPrevImage.addEventListener("click", slideLeft);
+                prevImage.addEventListener("click", slideLeft);
+                nextImage.addEventListener("click", slideRight);
+                farNextImage.addEventListener("click", slideRight);
             })
             .catch(error => console.error("Error loading images:", error));
 
+        function slideLeft() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImages();
+        }
+
+        function slideRight() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImages();
+        }
+
+        function updateImages() {
+            const farPrevIndex = (currentIndex - 2 + images.length) % images.length;
+            const prevIndex = (currentIndex - 1 + images.length) % images.length;
+            const nextIndex = (currentIndex + 1) % images.length;
+            const farNextIndex = (currentIndex + 2) % images.length;
+
+            farPrevImage.src = images[farPrevIndex];
+            prevImage.src = images[prevIndex];
+            currentImage.src = images[currentIndex];
+            nextImage.src = images[nextIndex];
+            farNextImage.src = images[farNextIndex];
+        }
     </script>
 </body>
 </html>
