@@ -127,7 +127,7 @@
         .review-container h4 {
             text-align: left;
             color: #FF9B17;
-            font-weight: bold   ;
+            font-weight: bold;
         }
         
         .review-container h5 {
@@ -148,6 +148,41 @@
             align-items: left;
             gap: 10px;
         }
+        @media (max-width: 768px) {
+            #farPrevImage,
+            #farNextImage {
+                display: none !important;
+            }
+
+            #prevImage,
+            #nextImage {
+                width: 20%;
+                height: auto;
+            }
+
+            #currentImage {
+                width: 40%;
+                height: auto;
+            }
+
+            .review-container img {
+                width: 10vw;
+                height: 10vw;
+            }
+            .review-container p {
+                font-size: 17px;
+            }
+            .review-container h4 {
+                margin-top: 4%;
+                font-size: 20px;
+            }
+            
+            .review-container h5 {
+                margin-top: -5px;
+                font-size: 17px;
+            }
+        }
+
     </style>
 </head>
 <body>
