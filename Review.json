@@ -1,12 +1,36 @@
 {
     "images": [
-        "img/kimchi.png",
-        "img/bibimbap.png",
-        "img/kimbap.png",
-        "img/ramyeon.png",
-        "img/mandu.png",
-        "img/jajangmyeon.png",
-        "img/topoki.png",
-        "img/dalgona.png"
+        {
+            "src" : "img/kimchi.png",
+            "id" : "kimchi"
+        },
+        {
+            "src" : "img/bibimbap.png",
+            "id" : "bibimbap"
+        },
+        {
+            "src" :"img/kimbap.png",
+            "id" : "kimbap"
+        },
+        {
+            "src" : "img/ramyeon.png",
+            "id" : "ramyeon"
+        },
+        {
+            "src" :"img/mandu.png",
+            "id" : "mandu"
+        },
+        {
+            "src" :"img/jajangmyeon.png",
+            "id" : "jajangmyeon"
+        },
+        {
+            "src" :"img/topoki.png",
+            "id" :"topoki"
+        },
+        {
+            "src" :"img/dalgona.png",
+            "id" : "dalgona"
+        }   
     ]
 }

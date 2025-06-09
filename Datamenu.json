@@ -1,74 +1,108 @@
 [
     {
-    "nama": "Bimbimbap",
-    "deskripsi": "Semangkuk nasi yang lezat berisi sayuran klasik bibimbap, daging sapi, dan saus gochujang!",
-    "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC3899-4-e1644947571796-640x853.jpg",
-    "bahan": [
-        "3 cangkir beras pendek (short grain rice)",  
-        "225 gram daging sapi iris tipis (rib eye, sirloin, atau daging cincang)",
-        "1,5 sdm kecap asin",
-        "2 sdt gula",
-        "2 sdt minyak wijen",
-        "2 sdt mirin (arak masak Jepang)",
-        "1 sdt bawang putih cincang",
-        "1 sdm daun bawang cincang",
-        "Lada secukupnya",
-        "225 gram tauge kacang hijau (sukju) atau tauge kedelai (kongnamul)",
-        "1 ikat bayam (sekitar 225 gram)",
-        "2 mentimun kecil (sekitar 140 gram)",
-        "115 gram jamur (shiitake, champignon, cremini, dll.)",
-        "2 wortel ukuran sedang (sekitar 140 gram)",
-        "1,5 sdt bawang putih cincang (dibagi)",
-        "3 sdm daun bawang cincang (dibagi)",
-        "Minyak wijen",
-        "Biji wijen",
-        "Garam",
-        "4 butir telur – opsional",
-        "Minyak untuk memasak",
-        "225 gram kongnamul (tauge kedelai) – pilihan sayuran tambahan",
-        "280 gram lobak Korea (mu) – pilihan sayuran tambahan",
-        "4 sdm gochujang (고추장)",
-        "2 sdt gula – sesuaikan dengan selera, bisa 1–3 sdt",
-        "1 sdm minyak wijen",
-        "1 sdm air"
-    ],
-    "Instruksi" :
-    [
-        "Masak nasi tanpa direndam, gunakan sedikit lebih sedikit air dari biasanya. Nasi untuk bibimbap sebaiknya agak kering agar hasilnya lebih baik.",
-        "Potong daging menjadi irisan tipis sepanjang 5 cm. Campur dengan kecap asin, gula, minyak wijen, mirin, daun bawang cincang, bawang putih cincang, biji wijen, dan lada. Diamkan selama 20 menit. Tumis di wajan panas selama 2–3 menit.",
-        "Tauge: Rebus 2 cangkir air hingga mendidih. Blansir tauge selama ±1 menit, balik sekali. Tiriskan dan rendam sebentar di air dingin. Tiriskan kembali. Campur dengan 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam.",
-        "Bayam: Rebus bayam sebentar di air mendidih yang telah diberi garam, ±40 detik. Tiriskan dan langsung rendam di air dingin. Peras airnya, potong sepanjang ±7 cm. Campur dengan 1 sdm daun bawang cincang, 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam.",
-        "Mentimun: Belah dua memanjang lalu iris tipis. Taburi garam (±1/2 sdt), diamkan 10–15 menit. Peras airnya, lalu campur dengan 1 sdm daun bawang cincang, 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, dan 1/2 sdt biji wijen.",
-        "Jamur dan wortel: Iris tipis, lalu tumis secara terpisah di sedikit minyak selama 1–2 menit dengan api sedang-besar. Tambahkan garam (sekitar 1/4 sdt per sayur).",
-        "Kongnamul: Rebus 2 cangkir air, masukkan tauge kedelai dan rebus 2–3 menit. Tiriskan dan rendam sebentar di air dingin. Tiriskan lagi. Campur dengan 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam (atau sesuai selera).",
-        "Musaengchae (salad lobak pedas): Potong 280 gram lobak Korea menjadi bentuk korek api. Campur dengan 2 sdm daun bawang cincang, 1 sdm bubuk cabai Korea (gochugaru), 1 sdt bawang putih cincang, 1/2 sdt garam, 1 sdt gula, dan 1 sdt biji wijen. Aduk rata.",
-        "Telur (opsional): Goreng telur mata sapi atau sesuai selera (opsional)",
-        "Campur semua bahan saus dalam mangkuk kecil dan aduk hingga rata.",
-        "Letakkan nasi dalam mangkuk besar. Tata semua topping sayuran dan daging di atasnya. Teteskan sedikit minyak wijen. Tambahkan telur goreng di atasnya jika suka, dan sajikan bersama saus gochujang.",
-        "Untuk dolsot bibimbap: Olesi mangkuk batu atau tanah liat dengan 1 sdt minyak wijen, panaskan di atas api sedang. Masukkan nasi dan susun topping di atasnya. Biarkan beberapa menit hingga bagian bawah nasi terdengar berdesis."
-    ],
+        "nama": "Bimbimbap",
+        "deskripsi": "Semangkuk nasi yang lezat berisi sayuran klasik bibimbap, daging sapi, dan saus gochujang!",
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC3899-4-e1644947571796-640x853.jpg",
+        "alat": [],
+        "bahan": [
+            "3 cangkir beras pendek (short grain rice)",  
+            "225 gram daging sapi iris tipis (rib eye, sirloin, atau daging cincang)",
+            "1,5 sdm kecap asin",
+            "2 sdt gula",
+            "2 sdt minyak wijen",
+            "2 sdt mirin (arak masak Jepang)",
+            "1 sdt bawang putih cincang",
+            "1 sdm daun bawang cincang",
+            "Lada secukupnya",
+            "225 gram tauge kacang hijau (sukju) atau tauge kedelai (kongnamul)",
+            "1 ikat bayam (sekitar 225 gram)",
+            "2 mentimun kecil (sekitar 140 gram)",
+            "115 gram jamur (shiitake, champignon, cremini, dll.)",
+            "2 wortel ukuran sedang (sekitar 140 gram)",
+            "1,5 sdt bawang putih cincang (dibagi)",
+            "3 sdm daun bawang cincang (dibagi)",
+            "Minyak wijen",
+            "Biji wijen",
+            "Garam",
+            "4 butir telur – opsional",
+            "Minyak untuk memasak",
+            "225 gram kongnamul (tauge kedelai) – pilihan sayuran tambahan",
+            "280 gram lobak Korea (mu) – pilihan sayuran tambahan",
+            "4 sdm gochujang (고추장)",
+            "2 sdt gula – sesuaikan dengan selera, bisa 1–3 sdt",
+            "1 sdm minyak wijen",
+            "1 sdm air"
+        ],
+        "Instruksi" :
+        [
+            "Masak nasi tanpa direndam, gunakan sedikit lebih sedikit air dari biasanya. Nasi untuk bibimbap sebaiknya agak kering agar hasilnya lebih baik.",
+            "Potong daging menjadi irisan tipis sepanjang 5 cm. Campur dengan kecap asin, gula, minyak wijen, mirin, daun bawang cincang, bawang putih cincang, biji wijen, dan lada. Diamkan selama 20 menit. Tumis di wajan panas selama 2–3 menit.",
+            "Tauge: Rebus 2 cangkir air hingga mendidih. Blansir tauge selama ±1 menit, balik sekali. Tiriskan dan rendam sebentar di air dingin. Tiriskan kembali. Campur dengan 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam.",
+            "Bayam: Rebus bayam sebentar di air mendidih yang telah diberi garam, ±40 detik. Tiriskan dan langsung rendam di air dingin. Peras airnya, potong sepanjang ±7 cm. Campur dengan 1 sdm daun bawang cincang, 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam.",
+            "Mentimun: Belah dua memanjang lalu iris tipis. Taburi garam (±1/2 sdt), diamkan 10–15 menit. Peras airnya, lalu campur dengan 1 sdm daun bawang cincang, 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, dan 1/2 sdt biji wijen.",
+            "Jamur dan wortel: Iris tipis, lalu tumis secara terpisah di sedikit minyak selama 1–2 menit dengan api sedang-besar. Tambahkan garam (sekitar 1/4 sdt per sayur).",
+            "Kongnamul: Rebus 2 cangkir air, masukkan tauge kedelai dan rebus 2–3 menit. Tiriskan dan rendam sebentar di air dingin. Tiriskan lagi. Campur dengan 1/2 sdt bawang putih cincang, 1 sdt minyak wijen, 1/2 sdt biji wijen, dan 1/2 sdt garam (atau sesuai selera).",
+            "Musaengchae (salad lobak pedas): Potong 280 gram lobak Korea menjadi bentuk korek api. Campur dengan 2 sdm daun bawang cincang, 1 sdm bubuk cabai Korea (gochugaru), 1 sdt bawang putih cincang, 1/2 sdt garam, 1 sdt gula, dan 1 sdt biji wijen. Aduk rata.",
+            "Telur (opsional): Goreng telur mata sapi atau sesuai selera (opsional)",
+            "Campur semua bahan saus dalam mangkuk kecil dan aduk hingga rata.",
+            "Letakkan nasi dalam mangkuk besar. Tata semua topping sayuran dan daging di atasnya. Teteskan sedikit minyak wijen. Tambahkan telur goreng di atasnya jika suka, dan sajikan bersama saus gochujang.",
+            "Untuk dolsot bibimbap: Olesi mangkuk batu atau tanah liat dengan 1 sdt minyak wijen, panaskan di atas api sedang. Masukkan nasi dan susun topping di atasnya. Biarkan beberapa menit hingga bagian bawah nasi terdengar berdesis."
+        ],
 
-    "imgInstruksi":
-    [
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/DSC3471-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-8-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-4-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-6-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-11-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-7-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2022/02/Recipe-Card-15-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2022/02/Recipe-Card-16-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/DSC3700-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2022/02/DSC4021-640x427.jpg",
-        "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-10-640x427.jpg"
-    ],
-    "sumber" : "https://www.koreanbapsang.com/bibimbap/"
+        "imgInstruksi":
+        [
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/DSC3471-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-8-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-4-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-6-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-11-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-7-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2022/02/Recipe-Card-15-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2022/02/Recipe-Card-16-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/DSC3700-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2022/02/DSC4021-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-10-640x427.jpg"
+        ],
+        "sumber" : "https://www.koreanbapsang.com/bibimbap/"
     },   
 
     {
         "nama": "Dalgona",
-        "deskripsi": "Permen gula sarang madu khas Korea yang membawa nostalgia, dibuat dari gula dan soda kue.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC2044-5-1.jpg"
+        "deskripsi": "Permen gula Korea yang renyah dan ringan, dibuat hanya dari gula dan soda kue, sering dicetak dengan bentuk lucu!",
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC2044-5-1.jpg",
+        "alat": [
+            "Sendok logam tahan panas (ladle) berbahan stainless steel",
+            "Sumpit untuk mengaduk gula",
+            "Loyang antilengket atau wajan datar (bisa diganti kertas roti)",
+            "Spatula karet",
+            "Alat press hotteok atau mangkuk dengan dasar rata berdiameter 10–12 cm",
+            "Cetakan kue",
+            "Stik lolipop (opsional)"
+        ],
+        "bahan": [
+            "1,5 sdm gula (putih atau coklat) per permen",
+            "1/16 sdt baking soda (sekitar 2–3 cubitan kecil)"
+        ],
+        "Instruksi": [
+            "Siapkan semua alat dan bahan terlebih dahulu.",
+            "Masukkan 1,5 sdm gula ke dalam sendok logam tahan panas (ladle). Pegang ladle di atas api kecil hingga sedang-kecil. Ketika gula mulai meleleh di pinggirannya, aduk dengan sumpit.",
+            "Terus aduk tanpa henti sambil mengontrol panas. Jika mulai berasap, angkat ladle beberapa inci dari api dan dekatkan kembali setelah agak dingin. Ulangi hingga gula benar-benar meleleh tanpa gumpalan.",
+            "Angkat ladle dari panas dan tambahkan baking soda.",
+            "Aduk cepat dan kuat (sekitar 20–25 kali) hingga baking soda larut sempurna dan campuran menjadi berbuih dan berwarna karamel muda. Jika perlu, dekatkan kembali ke api sebentar untuk menjaga suhu, tapi jangan terlalu lama karena bisa gosong.",
+            "Tuang campuran ke atas permukaan anti lengket seperti loyang antilengket, wajan, atau kertas roti. Gunakan spatula karet untuk membantu mengikis isinya. Masukkan stik lolipop jika menggunakan.",
+            "Biarkan dingin selama 15–20 detik. Coba tekan ringan untuk mengecek apakah sudah tidak lengket. Jika sudah, tekan menggunakan alat press hotteok atau mangkuk beralas rata (diameter 10–12 cm) selama 4–5 detik hingga mencapai ketebalan yang diinginkan.",
+            "Segera setelah ditekan, cetak bentuk menggunakan cetakan kue. Tekan dengan kuat tapi jangan sampai putus. Segera angkat cetakan."
+        ],
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0287-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0293-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0308-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0310-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0334-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0445-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0341-2-1-640x427.jpg"
+        ],
+        "sumber": "https://www.koreanbapsang.com/dalgona-spongy-candy/"
     },
 
     {
