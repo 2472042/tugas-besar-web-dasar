@@ -16,9 +16,6 @@
         body {
             background: #FFF085;
         }
-        .container-review {
-
-        }
         .container-review h1 {
             font-family: 'Alfa Slab One';
             color: #FCB454;
@@ -33,13 +30,15 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow-y: auto;
         }
-        /* .identity-review {
+        .review {
             background: #FFF085;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        } */
+            padding: 1% 3%;
+        }
         .comment {
-            background: #FFF085;
+            background: #FCB454;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             padding: 1% 3%;
         }
@@ -58,12 +57,12 @@
     <div class="container-review">
         <h1>What they think about?</h1>
         <div class="review-container">
-            <div class="identity-review">
+            <div class="review">
                 <h3>Nama</h3>
                 <p>Email</p>
-            </div>
-            <div class="comment">
-                <p>Halo</p>
+                <div class="comment">
+                    <p>Halo</p>
+                </div>
             </div>
         </div>
     </div>
