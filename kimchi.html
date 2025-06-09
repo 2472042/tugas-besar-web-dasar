@@ -19,12 +19,13 @@
 
     .left {
       width: 50%;
+      background-image: url(img/bg-left.png);
       background-color: #FFF085;
       padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color: #ff9000;
+      background-color: #F57C00;
     }
 
     .right {
@@ -69,8 +70,9 @@
       max-width: 300px;
       height: auto;
       border-radius: 10px;
-      animation: float 3s ease-in-out infinite;
+      animation: zoom 3s ease-in-out infinite;
     }
+
 
     .button-group {
       display: flex;
@@ -91,19 +93,17 @@
       background-color: #c62828;
     }
 
-    @keyframes float {
+    @keyframes zoom {
       0% {
-        transform: translateY(0px);
+        transform: scale(1);
       }
       50% {
-        transform: translateY(-15px);
+        transform: scale(1.1); /* Membesar sedikit */
       }
       100% {
-        transform: translateY(0px);
+        transform: scale(1);
       }
     }
-
-    
 
   </style>
 </head>

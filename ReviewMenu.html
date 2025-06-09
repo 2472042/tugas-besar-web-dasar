@@ -112,7 +112,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             overflow-y: auto;
-            display: none; /* Initially hidden */
+            display: none; 
         }
         .review {
             background: #FFF085;
@@ -152,7 +152,6 @@
         </div>
 
         <div class="review-container" id="reviewContent">
-            <!-- Review content will be loaded here dynamically -->
         </div>
     </div>
 
@@ -160,7 +159,6 @@
         window.onload = function () {
             const reviewContainer = document.getElementById("reviewContent");
 
-            // Set review container to hidden initially
             reviewContainer.style.display = "none"; 
 
             let images = [];
@@ -180,10 +178,9 @@
                     images = data.images;
                     if (images.length > 0) {
                         updateImages();
-                        loadReviews(images[currentIndex].id); // Load reviews for the first image
+                        loadReviews(images[currentIndex].id); 
                     }
 
-                    // Add event listeners for navigation
                     prevBtn.addEventListener("click", slideLeft);
                     nextBtn.addEventListener("click", slideRight);
                     farPrevImage.addEventListener("click", slideLeft);
@@ -194,19 +191,18 @@
                 .catch(error => {
                     console.error("Error loading images:", error);
                     reviewContainer.innerHTML = '<p class="text-center">Terjadi kesalahan saat memuat data review.</p>';
-                    reviewContainer.style.display = "block";  // Show error message if there is an issue
+                    reviewContainer.style.display = "block";  
                 });
 
             function slideLeft() {
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
                 updateImages();
-                loadReviews(images[currentIndex].id); // Load reviews when image changes
+                loadReviews(images[currentIndex].id); 
             }
-
             function slideRight() {
                 currentIndex = (currentIndex + 1) % images.length;
                 updateImages();
-                loadReviews(images[currentIndex].id); // Load reviews when image changes
+                loadReviews(images[currentIndex].id); 
             }
 
             function updateImages() {
@@ -223,7 +219,7 @@
             }
 
             function loadReviews(menuId) {
-                reviewContainer.style.display = "none"; // Hide review content initially
+                reviewContainer.style.display = "none"; 
 
                 fetch('Review.json')
                     .then(response => response.json())
@@ -231,7 +227,7 @@
                         const menuData = data.images.find(item => item.id === menuId);
                         
                         if (menuData) {
-                            reviewContainer.innerHTML = ""; // Clear previous reviews
+                            reviewContainer.innerHTML = ""; 
 
                             menuData.review.forEach(item => {
                                 const reviewHTML = `
@@ -245,15 +241,15 @@
                                 reviewContainer.innerHTML += reviewHTML;
                             });
 
-                            reviewContainer.style.display = "block";  // Show review content only after data is loaded
+                            reviewContainer.style.display = "block";  
                         } else {
                             reviewContainer.innerHTML = '<p class="text-center">Tidak ada review untuk menu ini.</p>';
-                            reviewContainer.style.display = "block";  // Show if no review available
+                            reviewContainer.style.display = "block";  
                         }
                     })
                     .catch(error => {
                         reviewContainer.innerHTML = '<p class="text-center">Terjadi kesalahan saat memuat data.</p>';
-                        reviewContainer.style.display = "block";  // Show error message if there is an issue
+                        reviewContainer.style.display = "block";  
                     });
             }
         };

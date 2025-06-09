@@ -19,11 +19,13 @@
 
     .left {
       width: 50%;
+      background-image: url(img/bg-left.png);
       background-color: #FFF085;
       padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-color: #F57C00;
     }
 
     .right {
@@ -32,18 +34,20 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-color: #FF9B17;
+      background-color: #ff9000; 
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 50px;
+      flex-direction: column;
+      overflow: hidden;
     }
+
 
     h1 {
       font-family:Georgia, 'Times New Roman', Times, serif;
       font-size: 60px;
-      color: #F16767;
-      margin-bottom: 30px;
+      color: #FFF085;
     }
 
     p {
@@ -54,11 +58,21 @@
       margin-bottom: 40px;
     }
 
+    .bg-p {
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #FFF085; 
+    }
+
+
     img {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
+      animation: zoom 3s ease-in-out infinite;
     }
+
 
     .button-group {
       display: flex;
@@ -78,13 +92,25 @@
     .button-group a:hover {
       background-color: #c62828;
     }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1); /* Membesar sedikit */
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="left">
-    <h1>Kimbap</h1>
-    <p>
-        Kimbap muncul sekitar tahun 1930-an, diduga sebagai hasil pengaruh dari makizushi Jepang selama masa penjajahan Jepang di Korea (1910–1945). 
+    <p class="bg-p">
+      Kimbap muncul sekitar tahun 1930-an, diduga sebagai hasil pengaruh dari makizushi Jepang selama masa penjajahan Jepang di Korea (1910-1945). 
       Namun, beberapa sejarawan menyebut bahwa praktik membungkus nasi dengan rumput laut (gim) sudah ada sejak era Joseon. 
       Berbeda dari sushi, kimbap menggunakan minyak wijen dan isian khas Korea seperti sayur, daging, dan telur, sehingga mencerminkan cita rasa lokal.
     </p>
@@ -94,6 +120,7 @@
     </div>
   </div>
   <div class="right">
+    <h1>Kimbap</h1>
     <img src="img/kimbap.png" alt="Kimbap" />
   </div>
 </body>

@@ -1,4 +1,3 @@
-
 #nav {
     display:flex;
     flex-direction: row;
@@ -8,37 +7,77 @@
     margin-top: 20px;
 }  
 
-#menus 
-{
+#menus {
     background-color: #F16767;
     width: fit-content;
     padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
     border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      gap: .5svw;
+    }
 }
 
-#nav a {
+#menus a {
   color: white;
+  fill: white;
   text-align: center;
   text-decoration: none; 
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 1vw;
+  margin-left: 1vw;
   padding: 5px;
 }  
 
-#nav a:hover {
+#menus a:hover {
   background-color: white;
   color: #F16767;
+  fill: #F16767;
   border-radius: 16px;
   padding: 5px;
 }  
-#nav a.active {
-  background-color: #262626;
-  color: white;
+#menus a svg {
+  fill: inherit;
+}
+
+#menus a.active {
+  color: #FFFF8D;
+  fill : #FFFF8D;
   padding: 5px;
 }
 
+@media (max-width: 800px) {
+  #nav {
+    width: 100vw;
+    margin: 0;
+  }
+  #menus {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-flow: column;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    gap: 0;
+    justify-items: center;
+  }
+  #menus a{
+    height: 45px;
+    width: auto;
+    margin: 0;
+    gap: 0;
+
+  }
+  #menus > a > span {
+    display: none;
+  }
+}
 footer 
 {
     background-color: #FFA3A3;
