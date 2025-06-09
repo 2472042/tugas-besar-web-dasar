@@ -11,18 +11,16 @@
     background-color: #F16767;
     width: fit-content;
     padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 1vw;
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-items: center;
-      gap: 1vw;
+      gap: .5svw;
     }
 }
 
@@ -31,8 +29,8 @@
   fill: white;
   text-align: center;
   text-decoration: none; 
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 1vw;
+  margin-left: 1vw;
   padding: 5px;
 }  
 
@@ -60,7 +58,7 @@
   }
   #menus {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-auto-flow: column;
     border-radius: 0;
     margin: 0;
