@@ -1,36 +1,252 @@
 {
-    "images": [
+  "images": [
+    {
+      "src": "img/kimchi.png",
+      "id": "kimchi",
+      "review": [
         {
-            "src" : "img/kimchi.png",
-            "id" : "kimchi"
+          "nama": "Dewi Lestari",
+          "email": "dewi.lestari@example.com",
+          "comment": "Resep kimchi dari website ini sangat jelas dan mudah diikuti. Rasanya autentik seperti buatan Korea!"
         },
         {
-            "src" : "img/bibimbap.png",
-            "id" : "bibimbap"
+          "nama": "Raka Pratama",
+          "email": "raka.pratama@example.com",
+          "comment": "Saya suka cara fermentasinya dijelaskan secara detail. Hasilnya enak dan segar!"
         },
         {
-            "src" :"img/kimbap.png",
-            "id" : "kimbap"
+          "nama": "Intan Permata",
+          "email": "intan.permata@example.com",
+          "comment": "Ini pertama kali saya buat kimchi sendiri, dan berkat resep ini, hasilnya memuaskan. Terima kasih!"
         },
         {
-            "src" : "img/ramyeon.png",
-            "id" : "ramyeon"
+          "nama": "Bagus Santoso",
+          "email": "bagus.santoso@example.com",
+          "comment": "Bumbunya pas dan tidak terlalu pedas. Cocok untuk lidah orang Indonesia. Sangat direkomendasikan!"
         },
         {
-            "src" :"img/mandu.png",
-            "id" : "mandu"
+          "nama": "Sari Wulandari",
+          "email": "sari.wulandari@example.com",
+          "comment": "Saya mencoba resep ini bersama keluarga, dan semua suka. Simpel, enak, dan bahan-bahannya mudah ditemukan."
+        }
+      ]
+    },
+    {
+      "src": "img/bibimbap.png",
+      "id": "bibimbap",
+      "review": [
+        {
+          "nama": "Yudi Kurniawan",
+          "email": "yudi.kurniawan@example.com",
+          "comment": "Resep bibimbap ini luar biasa! Saya bisa merasakan kombinasi rasa yang sangat seimbang."
         },
         {
-            "src" :"img/jajangmyeon.png",
-            "id" : "jajangmyeon"
+          "nama": "Melati Ayu",
+          "email": "melati.ayu@example.com",
+          "comment": "Saya suka variasi sayurnya dan cara penyajian yang cantik. Mudah untuk dibuat di rumah."
         },
         {
-            "src" :"img/topoki.png",
-            "id" :"topoki"
+          "nama": "Dian Hapsari",
+          "email": "dian.hapsari@example.com",
+          "comment": "Ini pertama kalinya saya mencoba masakan Korea. Resep ini benar-benar membuat saya jatuh cinta dengan bibimbap!"
         },
         {
-            "src" :"img/dalgona.png",
-            "id" : "dalgona"
-        }   
-    ]
+          "nama": "Agus Saputra",
+          "email": "agus.saputra@example.com",
+          "comment": "Nasi, daging, dan sayurnya berpadu dengan sempurna. Terima kasih atas resep yang hebat ini."
+        },
+        {
+          "nama": "Nadia Ramadhani",
+          "email": "nadia.ramadhani@example.com",
+          "comment": "Saya mengikuti resep ini untuk acara keluarga, dan semua orang menyukainya. Recommended!"
+        }
+      ]
+    },
+    {
+      "src": "img/kimbap.png",
+      "id": "kimbap",
+      "review": [
+        {
+          "nama": "Rio Firmansyah",
+          "email": "rio.firmansyah@example.com",
+          "comment": "Kimbap ini mudah dibuat dan cocok untuk bekal. Rasanya lezat!"
+        },
+        {
+          "nama": "Ayu Kristina",
+          "email": "ayu.kristina@example.com",
+          "comment": "Saya suka tekstur nasinya, tidak terlalu lembek. Kombinasi isian juga pas!"
+        },
+        {
+          "nama": "Budi Hartono",
+          "email": "budi.hartono@example.com",
+          "comment": "Anak-anak saya suka sekali kimbap ini. Praktis dan sehat!"
+        },
+        {
+          "nama": "Citra Larasati",
+          "email": "citra.larasati@example.com",
+          "comment": "Resepnya sangat detail dan mudah diikuti. Hasilnya memuaskan."
+        },
+        {
+          "nama": "Teguh Raharjo",
+          "email": "teguh.raharjo@example.com",
+          "comment": "Kimbapnya enak, saya tambahkan saus wijen dan hasilnya luar biasa."
+        }
+      ]
+    },
+    {
+      "src": "img/ramyeon.png",
+      "id": "ramyeon",
+      "review": [
+        {
+          "nama": "Indah Susanti",
+          "email": "indah.susanti@example.com",
+          "comment": "Ramyeon buatan sendiri ternyata jauh lebih enak! Terima kasih untuk resepnya."
+        },
+        {
+          "nama": "Dito Maulana",
+          "email": "dito.maulana@example.com",
+          "comment": "Rasa kuahnya gurih dan pedasnya pas. Saya tambahkan telur dan keju."
+        },
+        {
+          "nama": "Mira Anjani",
+          "email": "mira.anjani@example.com",
+          "comment": "Resep ini bikin saya ketagihan. Bahan-bahannya juga gampang dicari."
+        },
+        {
+          "nama": "Arif Nugroho",
+          "email": "arif.nugroho@example.com",
+          "comment": "Ramyeon ini cocok dimakan pas hujan. Nikmat banget!"
+        },
+        {
+          "nama": "Vina Lestari",
+          "email": "vina.lestari@example.com",
+          "comment": "Saya suka karena bisa menyesuaikan tingkat kepedasan sesuai selera."
+        }
+      ]
+    },
+    {
+      "src": "img/mandu.png",
+      "id": "mandu",
+      "review": [
+        {
+          "nama": "Galih Ramadhan",
+          "email": "galih.ramadhan@example.com",
+          "comment": "Mandu-nya empuk dan juicy. Saya goreng dan juga kukus, dua-duanya enak!"
+        },
+        {
+          "nama": "Tiara Putri",
+          "email": "tiara.putri@example.com",
+          "comment": "Proses pembuatannya menyenangkan. Rasanya seperti di restoran Korea."
+        },
+        {
+          "nama": "Fahriansyah",
+          "email": "fahri@example.com",
+          "comment": "Isiannya padat dan berasa. Sangat cocok jadi camilan di rumah."
+        },
+        {
+          "nama": "Siska Amalia",
+          "email": "siska.amalia@example.com",
+          "comment": "Saya buat mandu ini untuk arisan, dan semua teman memuji!"
+        },
+        {
+          "nama": "Daniel Wijaya",
+          "email": "daniel.wijaya@example.com",
+          "comment": "Resep mandu ini saya simpan sebagai favorit. Recommended banget!"
+        }
+      ]
+    },
+    {
+      "src": "img/jajangmyeon.png",
+      "id": "jajangmyeon",
+      "review": [
+        {
+          "nama": "Nina Sari",
+          "email": "nina.sari@example.com",
+          "comment": "Jajangmyeon ini punya rasa yang unik dan lezat. Sausnya kental dan gurih."
+        },
+        {
+          "nama": "Zaki Hakim",
+          "email": "zaki.hakim@example.com",
+          "comment": "Saya suka karena resepnya simpel dan hasilnya memuaskan."
+        },
+        {
+          "nama": "Ratna Dewi",
+          "email": "ratna.dewi@example.com",
+          "comment": "Pecinta masakan Korea wajib coba jajangmyeon ini!"
+        },
+        {
+          "nama": "Bayu Aditya",
+          "email": "bayu.aditya@example.com",
+          "comment": "Rasa manis dan asin dari saus hitamnya seimbang. Sangat nikmat."
+        },
+        {
+          "nama": "Linda Mayasari",
+          "email": "linda.mayasari@example.com",
+          "comment": "Anak saya tidak suka mie, tapi suka jajangmyeon ini. Ajaib!"
+        }
+      ]
+    },
+    {
+      "src": "img/topoki.png",
+      "id": "topoki",
+      "review": [
+        {
+          "nama": "Fajar Ridwan",
+          "email": "fajar.ridwan@example.com",
+          "comment": "Topoki-nya kenyal dan kuahnya pedas manis. Sempurna!"
+        },
+        {
+          "nama": "Novi Liana",
+          "email": "novi.liana@example.com",
+          "comment": "Saya buat ini bersama teman-teman, dan rasanya benar-benar otentik."
+        },
+        {
+          "nama": "Andi Saputra",
+          "email": "andi.saputra@example.com",
+          "comment": "Resep ini bikin saya jatuh cinta dengan topoki. Terima kasih!"
+        },
+        {
+          "nama": "Mega Kurniasih",
+          "email": "mega.kurniasih@example.com",
+          "comment": "Saya tambahkan fish cake dan telur rebus, makin mantap!"
+        },
+        {
+          "nama": "Rina Marlina",
+          "email": "rina.marlina@example.com",
+          "comment": "Tingkat kepedasannya pas, dan tekstur topokinya chewy banget."
+        }
+      ]
+    },
+    {
+      "src": "img/dalgona.png",
+      "id": "dalgona",
+      "review": [
+        {
+          "nama": "Tia Rosalia",
+          "email": "tia.rosalia@example.com",
+          "comment": "Resep dalgona-nya mudah dan hasilnya cantik seperti di kafe!"
+        },
+        {
+          "nama": "Reza Hidayat",
+          "email": "reza.hidayat@example.com",
+          "comment": "Minuman ini jadi favorit saya sejak pertama coba. Praktis dan nikmat."
+        },
+        {
+          "nama": "Santi Puspita",
+          "email": "santi.puspita@example.com",
+          "comment": "Saya buat dalgona ini tiap weekend. Rasanya creamy dan kuat kopinya."
+        },
+        {
+          "nama": "Ivan Aditya",
+          "email": "ivan.aditya@example.com",
+          "comment": "Saya suka foam-nya lembut dan mudah dibuat dengan resep ini."
+        },
+        {
+          "nama": "Dina Wahyuni",
+          "email": "dina.wahyuni@example.com",
+          "comment": "Resepnya simpel, hasilnya luar biasa. Cocok buat sajian tamu!"
+        }
+      ]
+    }
+  ]
 }
