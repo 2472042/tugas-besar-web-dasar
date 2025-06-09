@@ -11,32 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
     <style>
-        @media screen and (max-width: 425px) {
-            #menus {
-                width: 100%;
-                padding-left:  2vw;
-                padding-right: 2vw;
-            }
-            #menus a {
-                margin: 0 0;
-                font-size: 15px;
-            }
-        }
-        @media screen and (max-width: 375px) {
-            #menus {
-                width: 100%;
-                padding-left: 1vw;
-                padding-right: 1vw;
-            }
-        }
-        @media screen and (max-width: 320px) {
-            #menus {
-                width: 100%;
-                padding-left: 0.5vw;
-                padding-right: 0.5vw;
-            }
-        }
         body {
             background-color: #FFFF8D;
             text-align: center;
@@ -62,6 +38,7 @@
             align-items: center;
             background-color: rgba(252,180,84,0.4);
             flex-grow: 1;
+            flex-direction: column;
         }
         .carousel-inner {
             max-width: 650px;
@@ -82,23 +59,30 @@
         }
         .carousel-control-next-icon,
         .carousel-control-prev-icon {
-            background-color: black;
-            border-radius: 50%;
+            color: black;
             width: 40px;
             height: 40px;
             background-size: 60% 60%;
             background-position: center;
             background-repeat: no-repeat;
         }
-        .carousel-control-prev,
-        .carousel-control-next {
-            opacity: 0.8;
+        .carousel-body {
+            position: relative; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            flex-direction: row;
+            > button {
+                color: #FF9B17;
+                background: none;
+                border: none;
+                font-size: 50px;
+            }
         }
         img {
             width: 100%;
             height: 60%;
         }
-
     </style>
 </head>
 <body>
@@ -120,7 +104,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m787-145 28-28-75-75v-112h-40v128l87 87Zm-587 25q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v268q-19-9-39-15.5t-41-9.5v-243H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Z"/></svg>
                 <span>History</span>
             </a>
-            <a href="ReviewMenu.html">
+            <a href="review.html">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400h122l200-200q9-9 13.5-20.5T580-643q0-11-5-21.5T562-684l-36-38q-9-9-20-13.5t-23-4.5q-11 0-22.5 4.5T440-722L240-522v122Zm280-243-37-37 37 37ZM300-460v-38l101-101 20 18 18 20-101 101h-38Zm121-121 18 20-38-38 20 18Zm26 181h273v-80H527l-80 80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
                 <span>Review</span>
             </a>
@@ -143,6 +127,11 @@
     </div>
 
        <div class="imgbox">
+        <div class="carousel-body"style="position: relative; display: flex; justify-content: center; align-items: center; flex-direction: row;">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span aria-hidden="true">&#10094;</span>
+                <span class="visually-hidden">Previous</span>
+            </button>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
@@ -155,19 +144,13 @@
                     <img src="img/carousel3.jpg" class="d-block w-100">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span aria-hidden="true">&#10095;</span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-
-</body>
-</html>
     <footer>
         Copyright &copy; 2025 · All rights reserved · Seoul Explorer
     </footer>
