@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seoul Explorer</title>
     <link rel="stylesheet" href="style.css">
@@ -11,70 +11,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
     <style>
         body {
-            background: linear-gradient(to right, #FF9B17, #FCB454, #FFF085);
-            margin: 0;
-            font-family: Arial, sans-serif;
+            background: #FFF085;
         }
-        .container-review-page {
-            text-align: center;
-            margin-top: 5%;
-        }
-        .container-review-page h1 {
+        .container-review h1 {
             font-family: 'Alfa Slab One';
-            color: #FFFF8D;
-            font-size: 36px;
-            margin-bottom: 30px;
+            color: #FCB454;
+            margin-top: 4%;
+            margin-bottom: 5%;
+            margin-left: 5%;
         }
-        .review-page {
-            background: linear-gradient(to right, #FFF085, #FCB454, #FF9B17);
+        .review-container {
+            background: #FCB454;
             width: 800px;
             margin: 0 auto;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow-y: auto;
         }
-        .name-email-review {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 20px;
+        .review {
+            background: #FFF085;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 1% 3%;
         }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 20px;
-            border: none;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-
-        input::placeholder, textarea::placeholder {
-            color: #bbb;
-            opacity: 1;
-        }
-        textarea {
-            height: 120px;
-            resize: none;
-            margin-bottom: 20px;
-        }
-        .name-email-review input {
-            width: 48%;
-        }
-        button {
-            background-color: #FF9B17;
-            font-family: 'Alfa Slab One';
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #FCB454;
-            color: #FFFF8D;
+        .comment {
+            background: #FCB454;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 1% 3%;
         }
     </style>
 </head>
@@ -82,23 +48,23 @@
     <div id="nav">
         <div id="menus">
             <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html" class="activeMenu">Menu</a>
             <a href="about.html">About</a>
-            <a href="history.html" class="activeMenu">History</a>
+            <a href="history.html">History</a>
             <a href="review.html">Review</a>
         </div>
     </div>
-    <div class="container-review-page">
-        <h1>Your Review</h1>
-        <div class="review-page">
-            <div class="name-email-review">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+    <div class="container-review">
+        <h1>What they think about?</h1>
+        <div class="review-container">
+            <div class="review">
+                <h3>Nama</h3>
+                <p>Email</p>
+                <div class="comment">
+                    <p>Halo</p>
+                </div>
             </div>
-            <textarea placeholder="Comment..."></textarea>
-            <button type="submit">Submit</button>
         </div>
     </div>
-
 </body>
 </html>
