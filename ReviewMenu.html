@@ -106,13 +106,13 @@
         }
         .review-container {
             background: #FCB454;
-            width: 800px;
+            width: 90%;
             margin: 0 auto;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             overflow-y: auto;
-            display: none; 
+            border-radius: 5%;
         }
         .review {
             background: #FFF085;
@@ -122,7 +122,31 @@
         .comment {
             background: #FCB454;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            padding: 1% 3%;
+            padding: 1% 2%;
+        }
+        .review-container h4 {
+            text-align: left;
+            color: #FF9B17;
+            font-weight: bold   ;
+        }
+        
+        .review-container h5 {
+            text-align: left;
+            color: #FCB454;
+        }
+        .review-container p {
+            text-align: left;
+            color: #FFFF8D;
+            font-size: 25px;
+        }
+        .review-container img {
+            width: 4vw;
+            height: 4vw;
+        }
+        .review-img-container {
+            display: flex;
+            align-items: left;
+            gap: 10px;
         }
     </style>
 </head>
@@ -161,11 +185,11 @@
         <div class="slider">
             <div class="image-container">
                 <button id="prevBtn">&#10094;</button>
-                <img id="farPrevImage" class="slider-img" src="img/bibimbap.jpg">
-                <img id="prevImage" class="slider-img" src="img/bibimbap.jpg">
-                <img id="currentImage" class="slider-img" src="img/bibimbap.jpg">
-                <img id="nextImage" class="slider-img" src="img/bibimbap.jpg">
-                <img id="farNextImage" class="slider-img" src="img/bibimbap.jpg">
+                <img id="farPrevImage" class="slider-img" src="img/bibimbap.png">
+                <img id="prevImage" class="slider-img" src="img/bibimbap.png">
+                <img id="currentImage" class="slider-img" src="img/bibimbap.png">
+                <img id="nextImage" class="slider-img" src="img/bibimbap.png">
+                <img id="farNextImage" class="slider-img" src="img/bibimbap.png">
                 <button id="nextBtn">&#10095;</button>
             </div>
         </div>
@@ -175,7 +199,7 @@
     </div>
 
     <script>
-        window.onload = function () {
+        document.addEventListener("DOMContentLoaded", function() {
             const reviewContainer = document.getElementById("reviewContent");
 
             reviewContainer.style.display = "none"; 
@@ -209,8 +233,7 @@
                 })
                 .catch(error => {
                     console.error("Error loading images:", error);
-                    reviewContainer.innerHTML = '<p class="text-center">Terjadi kesalahan saat memuat data review.</p>';
-                    reviewContainer.style.display = "block";  
+                    reviewContainer.innerHTML = '<p class="text-center">Terjadi kesalahan saat memuat data review.</p>'; 
                 });
 
             function slideLeft() {
@@ -251,8 +274,13 @@
                             menuData.review.forEach(item => {
                                 const reviewHTML = `
                                     <div class="review mb-4">
-                                        <h3>${item.nama}</h3>
-                                        <p>${item.email}</p>
+                                        <div class="review-img-container">
+                                            <img src="./img/person-icon.png" class="review-img" />
+                                            <div class="review-ind">
+                                                <h4>${item.nama}</h4>
+                                                <h5>${item.email}</h5>
+                                            </div>
+                                        </div>
                                         <div class="comment mt-2">
                                             <p>${item.comment}</p>
                                         </div>
@@ -260,18 +288,18 @@
                                 reviewContainer.innerHTML += reviewHTML;
                             });
 
-                            reviewContainer.style.display = "block";  
+                            currentImage.addEventListener("click", function() {
+                                reviewContainer.style.display = "block"; 
+                            });
                         } else {
                             reviewContainer.innerHTML = '<p class="text-center">Tidak ada review untuk menu ini.</p>';
-                            reviewContainer.style.display = "block";  
                         }
                     })
                     .catch(error => {
                         reviewContainer.innerHTML = '<p class="text-center">Terjadi kesalahan saat memuat data.</p>';
-                        reviewContainer.style.display = "block";  
                     });
             }
-        };
+        });
     </script>
 </body>
 </html>
