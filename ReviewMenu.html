@@ -282,6 +282,10 @@
                 loadReviews(images[currentIndex].id); 
             }
 
+            function showComment() {
+                reviewContainer.style.display = "block"; 
+            }
+
             function updateImages() {
                 const farPrevIndex = (currentIndex - 2 + images.length) % images.length;
                 const prevIndex = (currentIndex - 1 + images.length) % images.length;
@@ -323,9 +327,11 @@
                                 reviewContainer.innerHTML += reviewHTML;
                             });
 
-                            currentImage.addEventListener("click", function() {
-                                reviewContainer.style.display = "block"; 
-                            });
+                            currentImage.addEventListener("click", showComment);
+                            farPrevImage.addEventListener("click", showComment);
+                            prevImage.addEventListener("click", showComment);
+                            nextImage.addEventListener("click", showComment);
+                            farNextImage.addEventListener("click", showComment);
                         } else {
                             reviewContainer.innerHTML = '<p class="text-center">Tidak ada review untuk menu ini.</p>';
                         }
