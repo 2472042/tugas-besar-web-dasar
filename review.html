@@ -177,12 +177,18 @@
             const nextIndex = (currentIndex + 1) % images.length;
             const farNextIndex = (currentIndex + 2) % images.length;
 
-            farPrevImage.src = images[farPrevIndex];
-            prevImage.src = images[prevIndex];
-            currentImage.src = images[currentIndex];
-            nextImage.src = images[nextIndex];
-            farNextImage.src = images[farNextIndex];
+            farPrevImage.src = images[farPrevIndex].src;
+            prevImage.src = images[prevIndex].src;
+            currentImage.src = images[currentIndex].src;
+            nextImage.src = images[nextIndex].src;
+            farNextImage.src = images[farNextIndex].src;
         }
+
+        currentImage.addEventListener("click", () => {
+            const id = images[currentIndex].id;
+            window.location.href = `detail.html?id=${id}`;
+        });
+
     </script>
 </body>
 </html>
