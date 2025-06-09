@@ -95,21 +95,26 @@ footer
 /* home */
 
 .bg{
-    text-align: center;
+    min-height: 100vh;
     background-image: url(img/HomeBG.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* change to fill if phone */
 }
 .korea{
   color: #FFF085;
-  margin-top: 30vh;
+  text-align: center;
 }
 #ing{
-  font-size: 6em;
+  font-size:  10vw;
   font-family: 'Alfa Slab One';
 }
 #kor{
-  font-size: 4em;
+  font-size: 7.5vw;
   font-family: 'Alfa Slab One';
 }
 .bounce {

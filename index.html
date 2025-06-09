@@ -11,8 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+    #nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    </style>
 </head>
-<body class="bg">
+<body>
     <div id="nav">
         <div id="menus">
             <a href="index.html" class="active">
@@ -41,9 +49,11 @@
             </a>
         </div>
     </div>
-    <div class="korea">
-        <p id="ing"></p>
-        <p id="kor"></p>
+    <div class="bg">
+        <div class="korea">
+            <p id="ing"></p>
+            <p id="kor"></p>
+        </div>
     </div>
     <script>
         function typeBounce(text, elementId, delay=150) {
