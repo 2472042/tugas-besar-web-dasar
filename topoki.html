@@ -19,11 +19,13 @@
 
     .left {
       width: 50%;
+      background-image: url(img/bg-left.png);
       background-color: #FFF085;
       padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-color: #F57C00;
     }
 
     .right {
@@ -32,18 +34,20 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-color: #FF9B17;
+      background-color: #ff9000; 
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 50px;
+      flex-direction: column;
+      overflow: hidden;
     }
+
 
     h1 {
       font-family:Georgia, 'Times New Roman', Times, serif;
       font-size: 60px;
-      color: #F16767;
-      margin-bottom: 30px;
+      color: #FFF085;
     }
 
     p {
@@ -54,11 +58,21 @@
       margin-bottom: 40px;
     }
 
+    .bg-p {
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #FFF085; 
+    }
+
+
     img {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
+      animation: zoom 3s ease-in-out infinite;
     }
+
 
     .button-group {
       display: flex;
@@ -78,13 +92,25 @@
     .button-group a:hover {
       background-color: #c62828;
     }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1); /* Membesar sedikit */
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="left">
-    <h1>Tteokbokki</h1>
-    <p>
-        Tteokbokki awalnya merupakan hidangan kerajaan tidak pedas yang dibuat dari garaetteok (kue beras memanjang). 
+    <p class="bg-p">
+      Tteokbokki awalnya merupakan hidangan kerajaan tidak pedas yang dibuat dari garaetteok (kue beras memanjang). 
         Versi modern yang pedas dengan saus gochujang baru muncul pada tahun 1953, ketika Ma Bok-rim, seorang pedagang di Seoul, 
         secara tidak sengaja menciptakannya dan menjualnya di Sindang-dong. Sejak saat itu, tteokbokki menjadi jajanan kaki lima ikonik di Korea.
     </p>
@@ -94,6 +120,7 @@
     </div>
   </div>
   <div class="right">
+    <h1>Tteokbokki</h1>
     <img src="img/topoki.png" alt="Tteokbokki" />
   </div>
 </body>

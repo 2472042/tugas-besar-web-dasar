@@ -19,27 +19,35 @@
 
     .left {
       width: 50%;
+      background-image: url(img/bg-left.png);
       background-color: #FFF085;
       padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-color: #F57C00;
     }
 
     .right {
       width: 50%;
-      background-color: #FF9B17;
+      background-image: url('./img/bg-right.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #ff9000; 
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 50px;
+      flex-direction: column;
+      overflow: hidden;
     }
+
 
     h1 {
       font-family:Georgia, 'Times New Roman', Times, serif;
       font-size: 60px;
-      color: #F16767;
-      margin-bottom: 30px;
+      color: #FFF085;
     }
 
     p {
@@ -50,11 +58,21 @@
       margin-bottom: 40px;
     }
 
+    .bg-p {
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #FFF085; 
+    }
+
+
     img {
-      max-width: 100%;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
+      animation: zoom 3s ease-in-out infinite;
     }
+
 
     .button-group {
       display: flex;
@@ -74,22 +92,36 @@
     .button-group a:hover {
       background-color: #c62828;
     }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1); /* Membesar sedikit */
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="left">
-    <h1>Dalgona</h1>
-    <p>
-        Dalgona, juga dikenal sebagai ppopgi, adalah permen sederhana dari gula dan baking soda yang populer sejak 1960-an. 
+    <p class="bg-p">
+      Dalgona, juga dikenal sebagai ppopgi, adalah permen sederhana dari gula dan baking soda yang populer sejak 1960-an. 
         Permen ini biasanya dijual di jalanan dan anak-anak mencoba memotong bentuk tertentu dari permennya tanpa merusaknya, 
-        sebagai permainan kecil. Popularitas dalgona mendunia setelah tampil dalam serial <i>Squid Game</i> (2021), menjadikannya simbol nostalgia masa kecil orang Korea. 
+        sebagai permainan kecil. Popularitas dalgona mendunia setelah tampil dalam serial <i>Squid Game</i> (2021), menjadikannya simbol nostalgia masa kecil orang Korea.
     </p>
     <div class="button-group">
+      <a href="topoki.html">Sebelumnya</a>
       <a href="history.html">Kembali</a>
     </div>
   </div>
   <div class="right">
-    <img src="img/dalgona.png" alt="Dalgona" />
+    <h1>Dalgona</h1>
+    <img src="img/dalgona.png" alt="dalgona" />
   </div>
 </body>
 </html>
