@@ -63,7 +63,7 @@
             "https://www.koreanbapsang.com/wp-content/uploads/2022/02/DSC4021-640x427.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2015/01/Recipe-Card-10-640x427.jpg"
         ],
-        "sumber" : "https://www.koreanbapsang.com/bibimbap/"
+        "sumber" : "koreanbapsang.com/bibimbap/"
     },   
 
     {
@@ -102,7 +102,7 @@
             "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0445-2-640x427.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2020/04/DSC0341-2-1-640x427.jpg"
         ],
-        "sumber": "https://www.koreanbapsang.com/dalgona-spongy-candy/"
+        "sumber": "koreanbapsang.com/dalgona-spongy-candy/"
     },
 
     {
@@ -156,7 +156,7 @@
             "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimchi-recipe-step-7-e1431839970965.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC6357-2-640x427.jpg"
         ],
-        "sumber": "https://www.koreanbapsang.com/easy-kimchi-recipe/"
+        "sumber": "koreanbapsang.com/easy-kimchi-recipe/"
     },
 
     {
@@ -199,7 +199,7 @@
             "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4112-2-640x427.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4559-640x427.jpg"
         ],
-        "sumber": "https://www.koreanbapsang.com/tteokbokki-spicy-stir-fried-rice-cakes/"
+        "sumber": "koreanbapsang.com/tteokbokki-spicy-stir-fried-rice-cakes/"
     },
 
     {
@@ -211,52 +211,184 @@
         "Saringan besar",
         "Sarung tangan dapur",
         "Toples atau wadah kedap udara 3/4 - 1 galon"
-    ],
-    "bahan": [
-        "1 sawi putih besar (5–6 pon) atau 2 kecil (sekitar 3 pon masing-masing)",
-        "1 cangkir garam laut kasar Korea",
-        "5 cangkir air",
-        "450 gram lobak Korea",
-        "1/4 buah pir Korea (opsional)",
-        "3–4 batang daun bawang",
-        "1 potong dasima (2–3 inci, opsional)",
-        "1 sdm tepung beras ketan",
-        "1/2 cangkir bubuk cabai Korea (gochugaru), sesuaikan",
-        "1/4 cangkir udang fermentasi (saeujeot), cincang kasar",
-        "3 sdm saus ikan (myulchiaekjeot)",
-        "3–4 ekor udang mentah (opsional), cincang halus",
-        "3 sdm bawang putih cincang",
-        "1 sdt jahe parut",
-        "1/2 cangkir air atau kaldu dasima"
-    ],
-    "Instruksi": [
-        "Belah sawi putih memanjang menjadi 4 bagian tanpa memotong daun sepenuhnya.",
-        "Lumatkan 1/2 cangkir garam dalam 5 cangkir air. Rendam tiap bagian sawi dalam air garam lalu tiriskan dan pindahkan ke mangkuk lain.",
-        "Taburi bagian putih tiap daun dengan sisa garam secara merata. Tuang sisa air garam ke atas sawi. Diamkan 6–8 jam, balik tiap 2–3 jam.",
-        "Bilas sawi 3 kali hingga bersih. Tiriskan dengan sisi potongan menghadap ke bawah.",
-        "Rebus dasima dalam 1,5 cangkir air selama 5 menit. Campur tepung beras ketan dengan 1/2 cangkir air dan masak hingga menjadi pasta, lalu dinginkan.",
-        "Campur semua bumbu, termasuk pasta nasi dan air/kaldu, hingga menjadi pasta merah.",
-        "Potong lobak dan pir (opsional) menjadi batang korek api. Iris daun bawang secara diagonal. Campur dengan bumbu hingga rata. Diamkan 30 menit.",
-        "Isi tiap bagian sawi dengan campuran lobak dan bungkus dengan daun paling luar.",
-        "Masukkan ke toples kedap udara. Tuang sisa bumbu yang dilarutkan dengan 1/2 cangkir air. Tekan untuk mengeluarkan udara.",
-        "Diamkan suhu ruang 1–2 hari, lalu simpan di kulkas."
-    ],
-    "sumber" : "https://www.koreanbapsang.com/gimbapkimbap-korean-dried-seaweed-rolls/"
+        ],
+        "bahan": [
+            "1 sawi putih besar (5–6 pon) atau 2 kecil (sekitar 3 pon masing-masing)",
+            "1 cangkir garam laut kasar Korea",
+            "5 cangkir air",
+            "450 gram lobak Korea",
+            "1/4 buah pir Korea (opsional)",
+            "3–4 batang daun bawang",
+            "1 potong dasima (2–3 inci, opsional)",
+            "1 sdm tepung beras ketan",
+            "1/2 cangkir bubuk cabai Korea (gochugaru), sesuaikan",
+            "1/4 cangkir udang fermentasi (saeujeot), cincang kasar",
+            "3 sdm saus ikan (myulchiaekjeot)",
+            "3–4 ekor udang mentah (opsional), cincang halus",
+            "3 sdm bawang putih cincang",
+            "1 sdt jahe parut",
+            "1/2 cangkir air atau kaldu dasima"
+        ],
+        "Instruksi": [ 
+            "Masak nasi menggunakan sedikit lebih sedikit air dari biasanya agar teksturnya tidak terlalu lembek. Nasi yang baru dimasak paling baik digunakan untuk gimbap. Jaga tetap hangat sampai semua bahan isian siap.",
+            "Potong daging sapi menjadi strip tipis (sekitar 1,5 cm). Campur dengan 5 bahan bumbu (kecap asin, bawang putih, minyak wijen, gula, merica). Diamkan.",
+            "Didihkan air dalam panci besar, siapkan juga wadah berisi air dingin. Rebus bayam sebentar (blansir), lalu segera masukkan ke air dingin. Peras airnya, kemudian bumbui dengan minyak wijen dan garam.",
+            "Kocok telur dengan sejumput garam. Panaskan wajan antilengket kecil dengan api sedang rendah, lalu tuang telur. Setelah bagian bawah matang dan atasnya masih agak basah, lipat telur sepertiga kali dua untuk membuat omelet tebal. Dinginkan dan potong memanjang setebal 1,5 cm.",
+            "Iris wortel tipis memanjang (julienne). Tumis sebentar dalam wajan yang telah dioles minyak, sampai empuk. Bumbui sedikit garam. Angkat dan sisihkan.",
+            "Potong fish cake memanjang setebal 2 cm. Panaskan wajan dengan sedikit minyak, lalu tumis fish cake bersama kecap asin, gula, dan minyak wijen selama sekitar 2 menit hingga lunak.",
+            "Tumis daging sapi yang telah dibumbui di atas api sedang-besar selama 2–3 menit hingga matang sempurna.",
+            "Susun semua bahan isian (daging, telur, sayur, dll) di atas piring agar mudah diakses saat menggulung.",
+            "Bumbui nasi hangat dengan minyak wijen dan garam secukupnya. Aduk perlahan dengan sendok kayu besar agar tercampur rata tanpa merusak tekstur nasi.",
+            "Letakkan selembar rumput laut (nori) di atas talenan atau tikar bambu, bagian mengilap di bawah dan sisi panjang menghadap kamu. Ratakan ¾–1 cangkir nasi di atas nori, sisakan 4 cm di bagian atas untuk merekatkan gulungan.",
+            "Letakkan isian (daging, telur, bayam, wortel, dll) secara horizontal di tengah nasi, jangan terlalu banyak agar mudah digulung.",
+            "Gulung dengan hati-hati dari bawah ke atas menggunakan kedua tangan, sambil menekan gulungan dengan tikar bambu agar padat. Lanjutkan menggulung hingga ujung, beri tekanan agar gulungan rapat dan tidak terbuka.",
+            "Olesi permukaan gulungan dengan sedikit minyak wijen agar mengilap dan harum. Gunakan pisau tajam yang telah diolesi minyak wijen agar tidak lengket. Potong-potong gulungan menjadi ukuran gigitan sekitar 1,5 cm."
+        ],
+        "imgInstruksi": 
+        [
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8071-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-22-768x512.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-20-e1696705767178-768x512.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-18-768x512.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-21-e1696705898717-768x512.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-23-e1696706127366-768x512.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8254-2-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8283-2-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8290-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8301-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8306-768x513.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/6-x-4-in-17.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8332-768x513.jpg"
+        ],
+        "sumber" : "koreanbapsang.com/gimbapkimbap-korean-dried-seaweed-rolls/"
     
     },
     {
         "nama": "Ramyeon",
         "deskripsi": "Mie instan Korea yang terkenal, biasanya disajikan dalam kuah pedas dengan berbagai topping seperti telur, sayuran, dan daging.",
-        "img": "https://www.maangchi.com/wp-content/uploads/2013/10/noodles1.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2021/03/DSC8509-2-e1615689649868.jpg",
+        "bahan": [
+            "1/2 bungkus tahu sutra (sundubu)",
+            "1/2 bungkus mi instan pedas (ramyeon)",
+            "1 sdm daun bawang cincang",
+            "1/2 sdt bawang putih cincang",
+            "1/2 sdm minyak wijen",
+            "1/4 sdt bubuk cabai Korea (gochugaru, opsional)",
+            "1 butir telur",
+            "Sejumput lada"
+        ],
+        
+        "Instruksi": [
+            "Masukkan minyak wijen, bawang putih cincang, dan setengah bungkus bumbu ramyun serta gochugaru (jika digunakan) ke dalam panci kecil. Aduk rata di atas api sedang selama beberapa detik.",
+            "Tambahkan 1 cangkir air ke dalam panci. Naikkan panas ke api sedang-tinggi. Saat air mulai mendidih, masukkan sundubu (tahu sutra) dalam potongan besar, dan biarkan mendidih kembali.",
+            "Masukkan mie ramyun, lalu tambahkan setengah bungkus sayuran kering. Masak hingga mie hampir matang, sekitar 3 menit. Mie sebaiknya masih kenyal (al dente) pada tahap ini.",
+            "Pecahkan telur langsung ke atas mie. Kamu bisa membiarkan kuning telur utuh atau mengaduknya ke dalam kuah sesuai selera. Matikan api, tambahkan irisan daun bawang, dan taburi dengan lada sesuai selera."
+        ],  
+
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2021/03/DSC8441-e1615690272683-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2021/03/DSC8452-e1615690416399-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2021/03/DSC8476-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2021/03/DSC8458-1-e1615690586908-640x427.jpg"
+        ],
+        "sumber": "koreanbapsang.com/sundubu-ramyun/"
     },
     {
         "nama": "Jajangmyeon",
         "deskripsi": "Mie Korea yang disajikan dengan saus kedelai hitam kental, daging, dan sayuran, populer sebagai hidangan takeout.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1689-e1646885438273-640x853.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1689-e1646885438273-640x853.jpg",
+        "bahan": [
+            "3 - 4 porsi mi jajangmyeon/udon segar (sekitar 170 gram per porsi)",
+            "5 sdm Chunjang (춘장) atau pasta kacang hitam Korea (beberapa merek bertuliskan jjajang/짜장)",
+            "2 sdm minyak goreng",
+            "1 sdm gula",
+            "1 sdm saus tiram (opsional)",
+            "1 cangkir kaldu ayam atau air (tambahkan 1/2 cangkir lagi jika ingin saus lebih encer)",
+            "1 sdm tepung kentang atau maizena, larutkan dalam 1/4 cangkir kaldu ayam atau air",
+            "225 - 280 gram daging babi (lebih baik yang berlemak seperti bahu babi/Boston butt, atau tanpa lemak sesuai selera)",
+            "1 sdt jahe parut",
+            "1 sdm rice wine (atau mirin)",
+            "1/8 sdt garam dan lada",
+            "2 sdm minyak goreng",
+            "1 sdm kecap asin",
+            "1 bawang bombay besar (atau 2 sedang, total 340 - 400 gram)",
+            "225 gram kol hijau",
+            "225 gram zucchini",
+            "1 mentimun kecil untuk garnish (opsional)"
+        ],
+        "Instruksi": [
+            "Siapkan panci berisi air untuk merebus mi. Nyalakan apinya saat mulai memasak daging agar air mendidih saat saus selesai dibuat. Potong daging babi dan sayuran menjadi kubus ukuran 1/2 - 3/4 inci. Marinasi daging dengan 1 sdm rice wine (atau mirin), jahe, garam, dan lada sambil menyiapkan sayuran.",
+            "Tambahkan pasta kacang hitam ke panci kecil bersama minyak, gula, dan saus tiram (opsional). Tumis di atas api sedang selama 2 - 3 menit sambil terus diaduk.",
+            "Panaskan wajan besar dengan 2 sdm minyak goreng di atas api sedang-besar. Masukkan daging babi dan tumis hingga tidak lagi berwarna merah muda, tambahkan 1 sdm kecap asin di tengah proses memasak.",
+            "Tambahkan bawang bombay dan masak hingga lunak sambil sesekali diaduk.",
+            "Masukkan kol dan zucchini, lanjutkan menumis hingga sayuran melunak.",
+            "Masukkan pasta kacang hitam, aduk hingga semua bahan terlapisi dengan baik.",
+            "Jika suka ganjjajang, Anda bisa berhenti di sini dan lewati dua langkah berikutnya.",
+            "Tuangkan kaldu (atau air), didihkan selama 3 - 4 menit.",
+            "Masukkan larutan tepung kanji dan masak sebentar hingga saus mengental. Tambahkan gula sesuai selera.",
+            "Masukkan mi ke dalam air mendidih. Masak sesuai petunjuk kemasan dan tiriskan. Jangan overcook. Mi harus al dente.",
+            "Letakkan mi di mangkuk saji, tuang saus di atasnya, dan hiasi dengan irisan mentimun (opsional). Alternatifnya, sajikan dengan nasi putih."
+        ],
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/11/jajangmyeon2-e1447379201684.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/11/jajangmyeon21-1-e1447379589991.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1713-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1717-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1720-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1557-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1730-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1734-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1740-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2011/05/DSC1576-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2020/06/DSC6116-2-e1649891684461.jpg"
+        ],
+        "sumber": "koreanbapsang.com/jajangmyeon-noodles-in-black-bean-sauce/"
     },
     {
         "nama": "Mandu",
         "deskripsi": "Pangsit Korea yang diisi dengan daging, sayuran, atau keduanya, bisa direbus, dikukus, atau digoreng.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_1191-e1538625826525-640x853.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_1191-e1538625826525-640x853.jpg",
+        "bahan": [
+            "1 pak kulit pangsit (sekitar 40 lembar), 만두피 (mandu pi)",
+            "225 gram zucchini, cincang halus",
+            "280 gram kol hijau, cincang halus",
+            "115 gram jamur segar (shiitake lebih disarankan), cincang halus",
+            "1/2 bawang bombay sedang, cincang halus",
+            "2 batang daun bawang, cincang halus",
+            "225 gram daging babi cincang (atau jenis daging lain sesuai selera)",
+            "115 gram daging sapi cincang",
+            "1 sdm bawang putih cincang",
+            "1 - 2 sdt jahe cincang halus atau air jahe",
+            "1 sdm kecap asin",
+            "1 sdm minyak wijen",
+            "1 butir telur",
+            "1/4 sdt garam (untuk isian), tambahkan lebih untuk proses penggaraman sayur",
+            "1/8 sdt lada",
+            "1 sdm kecap asin (untuk saus celup)",
+            "1 sdt cuka",
+            "1 sdm air",
+            "1/2 sdt gula",
+            "Sejumput lada hitam",
+            "Sejumput bubuk cabai merah (gochugaru)"
+        ],
+        "Instruksi": [
+            "Cincang halus zucchini dan kol.",
+            "Taburi garam secara merata pada zucchini dan kol di dua mangkuk terpisah. Diamkan minimal 15 menit sambil menyiapkan bahan lain. Peras zucchini dan kol hingga airnya keluar sebanyak mungkin, lalu pindahkan ke mangkuk besar.",
+            "Siapkan dan masukkan semua bahan isian lainnya ke dalam mangkuk besar. Aduk rata menggunakan tangan.",
+            "Ambil 1 sendok teh adonan isian, letakkan di atas selembar kulit pangsit. Basahi pinggirannya dengan air dan lipat menjadi bentuk setengah lingkaran sambil menekan udara keluar. Ulangi hingga habis.",
+            "Panaskan wajan dengan 2 sdm minyak di atas api sedang besar. Tata mandu agar tidak saling menempel. Goreng selama 1–2 menit hingga bagian bawahnya keemasan. Tambahkan 1/3 cangkir air dan segera tutup. Kecilkan api ke sedang-rendah dan kukus 4–5 menit. Atau, goreng masing-masing sisi selama 2–3 menit tanpa air.",
+            "Untuk mandu goreng, panaskan minyak (2-3 inci) di penggorengan dengan suhu 175°C. Goreng mandu selama 2–3 menit hingga keemasan.",
+            "Untuk mandu kukus, kukus selama 10 menit (12 menit jika beku). Lapisi kukusan dengan kain katun basah atau daun kol agar tidak lengket.",
+            "Untuk mandu rebus, didihkan air, lalu masukkan mandu perlahan agar tidak lengket. Rebus hingga mengapung, lalu lanjutkan masak 1–2 menit lagi."
+        ],
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_1120-600x400.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_1124-600x400.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2009/09/mandu1-e1538627495665.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_0442-600x402.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2009/09/DSC_0010-600x402.jpg"
+        ]
+
+
     }
 ]
