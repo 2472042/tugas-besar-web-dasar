@@ -198,13 +198,51 @@
             "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4081-640x427.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4112-2-640x427.jpg",
             "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4559-640x427.jpg"
-        ]
+        ],
+        "sumber": "https://www.koreanbapsang.com/tteokbokki-spicy-stir-fried-rice-cakes/"
     },
 
     {
         "nama": "Kimbap",
         "deskripsi": "Sushi gulung Korea yang terbuat dari nasi, sayuran, daging, dan rumput laut, sering disajikan sebagai camilan atau bekal.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8399-2-e1696691292303-640x853.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC8399-2-e1696691292303-640x853.jpg",
+        "alat": [
+        "2 mangkuk besar (7–8 liter)",
+        "Saringan besar",
+        "Sarung tangan dapur",
+        "Toples atau wadah kedap udara 3/4 - 1 galon"
+    ],
+    "bahan": [
+        "1 sawi putih besar (5–6 pon) atau 2 kecil (sekitar 3 pon masing-masing)",
+        "1 cangkir garam laut kasar Korea",
+        "5 cangkir air",
+        "450 gram lobak Korea",
+        "1/4 buah pir Korea (opsional)",
+        "3–4 batang daun bawang",
+        "1 potong dasima (2–3 inci, opsional)",
+        "1 sdm tepung beras ketan",
+        "1/2 cangkir bubuk cabai Korea (gochugaru), sesuaikan",
+        "1/4 cangkir udang fermentasi (saeujeot), cincang kasar",
+        "3 sdm saus ikan (myulchiaekjeot)",
+        "3–4 ekor udang mentah (opsional), cincang halus",
+        "3 sdm bawang putih cincang",
+        "1 sdt jahe parut",
+        "1/2 cangkir air atau kaldu dasima"
+    ],
+    "Instruksi": [
+        "Belah sawi putih memanjang menjadi 4 bagian tanpa memotong daun sepenuhnya.",
+        "Lumatkan 1/2 cangkir garam dalam 5 cangkir air. Rendam tiap bagian sawi dalam air garam lalu tiriskan dan pindahkan ke mangkuk lain.",
+        "Taburi bagian putih tiap daun dengan sisa garam secara merata. Tuang sisa air garam ke atas sawi. Diamkan 6–8 jam, balik tiap 2–3 jam.",
+        "Bilas sawi 3 kali hingga bersih. Tiriskan dengan sisi potongan menghadap ke bawah.",
+        "Rebus dasima dalam 1,5 cangkir air selama 5 menit. Campur tepung beras ketan dengan 1/2 cangkir air dan masak hingga menjadi pasta, lalu dinginkan.",
+        "Campur semua bumbu, termasuk pasta nasi dan air/kaldu, hingga menjadi pasta merah.",
+        "Potong lobak dan pir (opsional) menjadi batang korek api. Iris daun bawang secara diagonal. Campur dengan bumbu hingga rata. Diamkan 30 menit.",
+        "Isi tiap bagian sawi dengan campuran lobak dan bungkus dengan daun paling luar.",
+        "Masukkan ke toples kedap udara. Tuang sisa bumbu yang dilarutkan dengan 1/2 cangkir air. Tekan untuk mengeluarkan udara.",
+        "Diamkan suhu ruang 1–2 hari, lalu simpan di kulkas."
+    ],
+    "sumber" : "https://www.koreanbapsang.com/gimbapkimbap-korean-dried-seaweed-rolls/"
+    
     },
     {
         "nama": "Ramyeon",
