@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kimchi - Sejarah Kuliner Korea</title>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <style>
@@ -102,6 +103,30 @@
       }
       100% {
         transform: scale(1);
+      }
+    }
+
+    @media (max-width: 800px) {
+      body {
+        width: 100%;
+        flex-direction: column-reverse;
+        .left {
+          padding: 1.5vw;
+          width: 100%;
+        }
+        .right {
+          flex-grow: 1;
+          width: 100%;
+          h1 {
+            font-size: 2.5em;
+          }
+          img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            animation: zoom 3s ease-in-out infinite;
+          }
+        }
       }
     }
 
