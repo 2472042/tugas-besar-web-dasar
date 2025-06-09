@@ -108,13 +108,99 @@
     {
         "nama": "Kimchi",
         "deskripsi": "Hidangan sayuran fermentasi yang terkenal dari Korea, biasanya terbuat dari sawi putih dan bumbu pedas.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC_0831-e1645400234347-640x853.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC_0831-e1645400234347-640x853.jpg",
+        "alat": [
+            "2 mangkuk besar atau panci ukuran 7–8 liter",
+            "1 saringan besar",
+            "Sarung tangan dapur",
+            "Wadah kedap udara ukuran 3/4 – 1 galon (atau toples besar)"
+        ],
+        "bahan": [
+            "1 sawi putih besar (baechu, 배추), sekitar 5–6 pon, atau 2 kecil (masing-masing sekitar 3 pon)",
+            "1 cangkir garam laut kasar Korea (gulgeun sogeum, 굵은소금)",
+            "5 cangkir air",
+            "450 gram lobak Korea (mu, 무)",
+            "1/4 buah pir Korea besar (opsional)",
+            "3–4 batang daun bawang",
+            "1 potong dasima (다시마, rumput laut kering), ukuran 5–7 cm (opsional)",
+            "1 sdm tepung ketan (chapssal garu, 찹쌀가루)",
+            "1/2 cangkir bubuk cabai Korea (gochugaru, 고추가루) – sesuaikan dengan selera",
+            "1/4 cangkir saeujeot (새우젓, udang asin fermentasi), dicincang kasar",
+            "3 sdm saus ikan (myulchiaekjeot, 멸치액젓)",
+            "3–4 ekor udang mentah (sekitar 60 gram), dicincang halus – opsional",
+            "3 sdm bawang putih cincang",
+            "1 sdt jahe parut",
+            "1/2 cangkir air atau kaldu dasima"
+        ],
+        "Instruksi": [
+            "Belah bagian putih tebal dari sawi secara memanjang, lalu tarik perlahan untuk memisahkan menjadi dua bagian. Lakukan hal yang sama pada masing-masing setengahnya untuk membuat 4 bagian. Hindari memotong sepenuhnya agar daun tidak terlepas.",
+            "Larutkan 1/2 cangkir garam dalam 5 cangkir air di mangkuk besar. Celupkan setiap bagian sawi ke dalam air garam, goyangkan untuk membuang kelebihan air, lalu pindahkan ke mangkuk lain.",
+            "Dengan sisa 1/2 cangkir garam, taburi bagian putih tebal tiap lembar daun secara merata, seperti saat membumbui daging. Gunakan semua garam ini untuk seluruh sawi. Tuangkan sisa air garam dari mangkuk pertama ke atas sawi. Diamkan selama 6–8 jam, balik posisi sawi setiap 2–3 jam.",
+            "Cek kelembutan bagian putih sawi. Jika bisa ditekuk tanpa patah, berarti sudah siap. Bilas sawi 3 kali dengan air bersih, terutama di bagian putihnya. Tiriskan dengan posisi potongan menghadap bawah.",
+            "Sementara itu, buat kaldu dasima (jika digunakan) dengan merebus potongan dasima dalam 1,5 cangkir air selama 5 menit. Dinginkan. Campurkan tepung ketan dengan 1/2 cangkir air (atau kaldu dasima) dan masak dengan api kecil hingga mengental menjadi bubur tipis. Dinginkan. Hasilnya sekitar 3–4 sdm.",
+            "Siapkan bawang putih, jahe, dan saeujeot. Campur semua bahan bumbu (termasuk bubur ketan dan 1/2 cangkir air atau kaldu dasima), lalu aduk rata. Diamkan hingga gochugaru menyerap air dan membentuk pasta.",
+            "Iris lobak dan pir (jika digunakan) memanjang seperti korek api. Potong daun bawang secara diagonal sepanjang ±2,5 cm. Campurkan lobak dan bumbu, aduk rata dengan tangan. Tambahkan daun bawang, aduk ringan. Koreksi rasa, seharusnya agak asin. Diamkan 30 menit agar rasa menyatu.",
+            "Potong bagian batang keras dari tiap potongan sawi, sisakan sedikit agar daun tetap menyatu. Ambil satu potong sawi, oleskan campuran lobak di tiap helai daunnya (sekitar 1–2 sdm per daun besar). Gunakan sekitar 1/4 bagian isian untuk setiap potong sawi.",
+            "Lipat daun ke arah batang dan bungkus dengan daun paling luar. Masukkan ke dalam wadah kedap udara atau toples, posisi potongan menghadap atas. Ulangi dengan sisa sawi. Jika ada daun besar tersisa, gunakan untuk menutupi bagian atas kimchi.",
+            "Tekan kimchi dalam wadah agar tidak ada rongga udara. Tambahkan 1/2 cangkir air atau sisa kaldu dasima ke dalam mangkuk bumbu, aduk lalu tuang ke dalam wadah kimchi.",
+            "Tutup rapat dan biarkan pada suhu ruang selama 1–2 hari (tergantung suhu dan tingkat fermentasi yang diinginkan), lalu simpan di lemari es."
+        ],
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimchi-recipe-step-1-e1431839519165.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC6301-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2019/11/kimchi-recipe-step-3-2-500x335.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimchi-recipe-step-4-e1431839739626.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC6314-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimchi-recipe-step-51-e1431840659121.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimch-recipe-step-6-e1431839864547.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2015/05/kimchi-recipe-step-7-e1431839970965.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2019/11/DSC6357-2-640x427.jpg"
+        ],
+        "sumber": "https://www.koreanbapsang.com/easy-kimchi-recipe/"
     },
+
     {
         "nama": "Tteokbokki",
         "deskripsi": "Hidangan Korea yang terbuat dari kue beras kenyal, dimasak dalam saus pedas manis yang kaya rasa.",
-        "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4637-4-640x853.jpg"
+        "img": "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4637-4-640x853.jpg",
+        "alat" : [],
+        "bahan": [
+            "450 gram kue beras tteokbokki (sekitar 24 potong sepanjang 7–8 cm)",
+            "1–2 lembar eomuk (fish cake)",
+            "110 gram kol (kubis) hijau",
+            "1–2 batang daun bawang",
+            "1 sdm bawang putih cincang",
+            "2 butir telur rebus",
+            "3 cangkir kaldu ikan teri (atau air, bisa 4 cangkir jika ingin lebih berkuah)",
+            "3 sdm pasta cabai Korea (gochujang)",
+            "1–3 sdt bubuk cabai Korea (gochugaru, sesuai selera pedas)",
+            "1 sdm kecap asin",
+            "2 sdm gula (bisa dikurangi jika kurang suka manis)",
+            "1 sdm sirup jagung atau oligo sirup (bisa diganti gula tambahan jika tidak pakai)",
+            "8–10 ikan teri kering ukuran sedang-besar (sekitar 15 gram)",
+            "1 potong dasima (rumput laut kering) ukuran 7–8 cm",
+            "1/4 bawang bombai, iris kasar",
+            "5 cangkir air"
+        ],
+        "Instruksi": [
+            "Rendam kue beras dalam air selama sekitar 20 menit. Jika dari kulkas, bisa lebih lama.",
+            "Potong fish cake, kol, dan daun bawang menjadi potongan sepanjang 5 cm.",
+            "Dalam panci besar, masukkan ikan teri, dasima, dan bawang bombai bersama 5 cangkir air. Didihkan dengan api sedang besar selama 10 menit, lalu saring dan ambil kaldunya.",
+            "Masukkan semua bahan saus ke dalam kaldu dan aduk hingga pasta gochujang larut.",
+            "Tambahkan kue beras ke dalam panci dan masak selama 8–10 menit hingga empuk dan saus mulai mengental. Aduk sesekali agar tidak lengket.",
+            "Masukkan kol, bawang putih, dan fish cake. Masak lagi selama 4–6 menit sambil terus diaduk. Tambahkan air bila perlu.",
+            "Di 2–3 menit terakhir, masukkan daun bawang dan telur rebus. Cicipi dan sesuaikan rasa. Sajikan panas."
+        ],
+        "imgInstruksi": [
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4477_01-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4102-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/Recipe-Card-19-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4081-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4112-2-640x427.jpg",
+            "https://www.koreanbapsang.com/wp-content/uploads/2018/09/DSC4559-640x427.jpg"
+        ]
     },
+
     {
         "nama": "Kimbap",
         "deskripsi": "Sushi gulung Korea yang terbuat dari nasi, sayuran, daging, dan rumput laut, sering disajikan sebagai camilan atau bekal.",

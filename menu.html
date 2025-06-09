@@ -401,10 +401,12 @@
             });
 
             $("#btnResepView").on("click", function() {
+                console.log("Button Resep View clicked");
                 var makananName = $("#makananViewName").text();
                 var makanan = data.find(m => m.nama === makananName);
 
                 if (makanan && makanan.bahan && makanan.Instruksi) {
+                    $("#resepTitle").text(`Cara membuat ${makanan.nama}`);
                     var alatHtml = "";
                     $("#resepAlatTitle").hide();
                     if (makanan.alat && makanan.alat.length > 0) {
