@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kimchi - Sejarah Kuliner Korea</title>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <style>
@@ -104,10 +105,25 @@
         transform: scale(1);
       }
     }
+    @media (max-width: 800px) {
+      body {
+        background-color: white;
+        width: 100%;
+        flex-direction: column-reverse;
+        .left {
+          padding: 1.5vw;
+          width: 100%;
+        }
+        .right {
+          flex-grow: 1;
+          width: 100%;
+        }
+      }
+    }
 
   </style>
 </head>
-<body>
+<body id="body">
   <div class="left">
     <p class="bg-p">
       Ramyeon adalah versi Korea dari mi instan yang pertama kali diperkenalkan pada tahun 1963 oleh Samyang Foods, 
