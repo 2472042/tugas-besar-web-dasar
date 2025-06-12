@@ -261,6 +261,12 @@
                   playButton.style.display = "none";
                   descriptionMobile.style.display = "none";
                   descriptionDesktop.style.display = "none";
+
+                  // Rotate screen to horizontal orientation
+                  if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock("landscape").catch((err) => console.warn("Orientation lock failed:", err));
+                  }
+
                   unityInstance.SetFullscreen(1);
                 };
 
