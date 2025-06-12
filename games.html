@@ -159,7 +159,6 @@
     <script>
 
       var descrption = `
-      Click the "Play" button to start the game on mobile devices.
       <br>
       <br>
       <b>Credit :</b>
@@ -174,6 +173,10 @@
         </ul>
       </ul>
       `;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        descrption = `Click the "Play" button to start the game on mobile devices.` + descrption;
+      }
 
       var descriptionMobile = document.querySelector("#descriptionMobile");
       descriptionMobile.innerHTML = descrption;
