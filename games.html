@@ -22,14 +22,9 @@
         position: absolute;
         border: 1vh solid #FF9B17;
         border-radius: 3vh;
-      }
-      #unity-container.unity-desktop { 
         left: 50%; 
-        top: 440px;
+        top: 530px;
         transform: translate(-50%, -50%) ;
-      }
-      #unity-container.unity-mobile { 
-        position: fixed; width: 100%; height: 30% 
       }
       #unity-canvas { 
         background-color: #FFFF8D;
@@ -44,7 +39,6 @@
       #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
       #unity-footer { position: relative }
       .unity-mobile #unity-footer { display: none }
-      #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
       #unity-fullscreen-button { 
         cursor:pointer; float: right; width: 38px; height: 38px; 
         background: url('TemplateData/fullscreen-button.png') no-repeat center;
@@ -52,14 +46,56 @@
         margin: 1vh;
       }
       #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
-      @media (max-width: 800px) {
+      
+      #play-button 
+      {
+          display: none;
+      }
+      #descriptionMobile 
+      {
+          display: none;
+      }
 
+      #descriptionDesktop {
+        display: block;
+      }
+
+      .description
+      {
+          text-align: left;
+          margin-top: 10px;
+          font-size: 1rem;
+          color: #333;
+          padding-left: 15%;
+      }
+      
+      @media (max-width: 800px) {
+        #unity-container {
+          display: none;
+        }
+        #play-button {
+          display: block;
+          margin: 20px auto;
+          padding: 10px 20px;
+          font-size: 1.5rem;
+          background-color: #FF9B17;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        #descriptionMobile {
+          display: block;
+        }
+        #descriptionDesktop {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
 
-    <div id="nav">
+   <div id="nav">
         <div id="menus">
             <a href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
@@ -88,7 +124,7 @@
         </div>
     </div>
 
-    <div id="unity-container" class="unity-desktop">
+    <div id="unity-container">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -98,11 +134,38 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
+        <div id="descriptionDesktop" class="description"></div>
+
       </div>
     </div>
+
+    <button id="play-button" onclick="playGame()">Play</button>
+    <div id="descriptionMobile" class="description"></div>
+
     <script>
+
+      var descrption = `
+      Click the "Play" button to start the game on mobile devices.
+      <br>
+      <br>
+      <b>Credit :</b>
+      <ul>
+        <li>Game developed by <a href="" target="_blank">GavMS</a></li>
+        <li>Asset drawn by <a href="" target="_blank">Artzy</a></li>
+        <li>Music by <a href="" target="_blank">Annazes</a></li>
+        <li>Sound effects from <a href="https://freesound.org/" target="_blank">Freesound</a></li>
+        <ul>
+          <li>Cookie Cut by <a href="https://freesound.org/people/SophronsineSoundDesign/" target="_blank">SophronsineSoundDesign</a></li>
+          <li>Cookie Crunch by <a href="https://freesound.org/people/jchiledred/" target="_blank">jchiledred</a></li>
+        </ul>
+      </ul>
+      `;
+
+      var descriptionMobile = document.querySelector("#descriptionMobile");
+      descriptionMobile.innerHTML = descrption;
+      var descriptionDesktop = document.querySelector("#descriptionDesktop");
+      descriptionDesktop.innerHTML = descrption;
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -196,6 +259,17 @@
 
       document.body.appendChild(script);
 
+      function playGame() {
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          createUnityInstance(canvas, config, (progress) => {
+            progressBarFull.style.width = 100 * progress + "%";
+          }).then((unityInstance) => {
+            unityInstance.SetFullscreen(1);
+          }).catch((message) => {
+            alert(message);
+          });
+        }
+      }
     </script>
   </body>
 </html>
