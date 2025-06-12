@@ -271,16 +271,28 @@
 
                 // Listen for fullscreen change to handle exiting fullscreen
                 const onFullscreenChange = () => {
-                  if (!document.fullscreenElement) {
-                    container.style.display = "none";
-                    playButton.style.display = "block";
-                    descriptionMobile.style.display = "block";
-                    descriptionDesktop.style.display = "block";
+                  // if mobile
+                  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) 
+                  {
+                      if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) 
+                      {
+                        container.style.display = "block";
+                        playButton.style.display = "none";
+                        descriptionMobile.style.display = "none";
+                        descriptionDesktop.style.display = "none";
+                      } 
+                      else 
+                      {
+                        container.style.display = "none";
+                        playButton.style.display = "block";
+                        descriptionMobile.style.display = "block";
+                        descriptionDesktop.style.display = "block";
 
-                    // Unlock screen orientation
-                    if (screen.orientation && screen.orientation.unlock) {
-                      screen.orientation.unlock();
-                    }
+                        // Unlock screen orientation
+                        if (screen.orientation && screen.orientation.unlock) {
+                          screen.orientation.unlock();
+                        }
+                      } 
                   }
                 };
 
