@@ -95,8 +95,6 @@ footer
 
 }
 
-/* home */
-
 .bg{
     min-height: 100vh;
     background-image: url(img/HomeBG.png);
@@ -132,11 +130,3 @@ footer
   100% { transform: translateY(0); }
 }
 
-
-/* about */
-
-
-/* menu */
-
-
-/* history */
