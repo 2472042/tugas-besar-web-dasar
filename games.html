@@ -261,14 +261,33 @@
                   playButton.style.display = "none";
                   descriptionMobile.style.display = "none";
                   descriptionDesktop.style.display = "none";
+                  unityInstance.SetFullscreen(1);
 
-                  // Rotate screen to horizontal orientation
+                  // Force screen orientation to landscape
                   if (screen.orientation && screen.orientation.lock) {
                     screen.orientation.lock("landscape").catch((err) => console.warn("Orientation lock failed:", err));
                   }
-
-                  unityInstance.SetFullscreen(1);
                 };
+
+                // Listen for fullscreen change to handle exiting fullscreen
+                const onFullscreenChange = () => {
+                  if (!document.fullscreenElement) {
+                    container.style.display = "none";
+                    playButton.style.display = "block";
+                    descriptionMobile.style.display = "block";
+                    descriptionDesktop.style.display = "block";
+
+                    // Unlock screen orientation
+                    if (screen.orientation && screen.orientation.unlock) {
+                      screen.orientation.unlock();
+                    }
+                  }
+                };
+
+                document.addEventListener("fullscreenchange", onFullscreenChange);
+                document.addEventListener("webkitfullscreenchange", onFullscreenChange);
+                document.addEventListener("mozfullscreenchange", onFullscreenChange);
+                document.addEventListener("MSFullscreenChange", onFullscreenChange);
 
 
               }).catch((message) => {
