@@ -83,11 +83,12 @@
             width: 100%;
             height: 60%;
         }
-        .visi {
+        .visi  {
             background-color: rgba(252,180,84,0.4);
             padding: 20px;
             border-radius: 10px;
             margin: 20px;
+            display: block;
         }
         .visi h2, .misi h2 {
             color: #F16767;
@@ -99,12 +100,14 @@
             padding: 20px;
             border-radius: 10px;
             margin: 20px;
+            display: block;
         }
         .about-us {
             background-color: rgba(252,180,84,0.4);
             padding: 20px;
             border-radius: 10px;
             margin: 20px;
+            display: block;
         }
         .about-us h2 {
             color: #F16767;
@@ -117,6 +120,43 @@
             border-radius: 50%;
             margin-top: 20px;
         }
+        .profile-id {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            gap: 15px; 
+            margin: 20px 0;
+        }
+
+        .profile-id img {
+            width: 150px; 
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; 
+        }
+
+        .profile-id .id {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        @media (max-width: 425px) {
+            .profile-id {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-id img {
+                width: 100px; 
+                height: 100px;
+            }
+            .profile-id .id {
+                text-align: center;
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -186,7 +226,7 @@
         </div>
     </div>
     <div class="purpose">
-        <div class="visi">
+        <div class="visi fade-up">
             <h2>Visi</h2>
             <p>
                 Menjadi platform terdepan dan kreatif yang menyatukan kecintaan terhadap makanan Korea, 
@@ -195,7 +235,7 @@
                 mengenalkan kekayaan budaya Korea yang lebih luas.
             </p>
         </div>
-        <div class="misi">
+        <div class="misi fade-up">
             <h2>Misi</h2>
             <p>
                 menghadirkan resep makanan Korea yang mudah, otentik, dan lezat, sambil mengenalkan budaya 
@@ -204,7 +244,7 @@
             </p>
         </div>
     </div>
-    <div class="about-us">
+    <div class="about-us fade-up">
         <h2>Profile Penulis</h2>
         <p>
             Kami adalah sebuah tim yang tengah menempuh pendidikan Teknik Informatika di Universitas Kristen 
@@ -213,22 +253,61 @@
             belajar, berbagi, dan memberikan dampak positif bagi masyarakat.
         </p>
         <div class="profile-us">
-            <div class="Profile-Aurel">
+            <div class="profile-id">
                 <img src="./img/Aurel.jpg" alt="Aurellia Yemima Tomy">
+                <div class="id">
+                    <span>Nama : Aurellia Yemima Tomy</span>
+                    <p>NIM : 2472001</p>
+                    <p>Email : 2472001@maranatha.ac.id</p>
+                </div>
             </div>
-        </div>
-        <div class="profile-Gavin">
-            <img src="./img/Gavin.jpeg.jpg" alt="Gavin Malik Ahmad">
-        </div>
-        <div class="profile-Mayang">
-            <img src="" alt="Maria Mayang Prihariyanti Panduwardani">
-        </div>
-        <div class="profile-Jayden">
-            <img src="" alt="Jaydenn Marvel">
+            <div class="profile-id">
+                <img src="./img/Mayang.jpg  " alt="Maria Mayang Prihariyanti Panduwardani">
+                <div class="id">
+                    <span>Nama : Maria Mayang Prihariyanti Panduwardani</span>
+                    <p>NIM : 2472003</p>
+                    <p>Email : 2472003@maranatha.ac.id</p>
+                </div>
+            </div>
+            <div class="profile-id">
+                <img src="./img/Gavin.jpeg.jpg" alt="Gavin Malik Ahmad">
+            </div>
+            <div class="profile-id">
+                <img src="" alt="Jaydenn Marvel">
+            </div>
         </div>
     </div>
     <footer>
         Copyright &copy; 2025 · All rights reserved · Seoul Explorer
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((up) => {
+                up.forEach(item => {
+                if (item.isIntersecting) {
+                    item.target.classList.add('visible');
+                    observer.unobserve(item.target);
+                }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+        <style>
+            .fade-up {
+                opacity: 0;
+                    transform: translateY(40px); 
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
+
+                .fade-up.visible {
+                    opacity: 1;
+                    transform: translateY(0); 
+                }
+
+        </style>
 </body>
 </html>
