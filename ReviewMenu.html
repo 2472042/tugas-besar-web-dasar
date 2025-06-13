@@ -166,12 +166,18 @@
                 height: auto;
             }
 
+            .review-container {
+                width: 95%;
+                padding: 20px;
+                border-radius: 5% 5% ;
+            }
             .review-container img {
                 width: 10vw;
                 height: 10vw;
             }
             .review-container p {
-                font-size: 17px;
+                font-size: 15px;
+            
             }
             .review-container h4 {
                 margin-top: 4%;
@@ -182,8 +188,46 @@
                 margin-top: -5px;
                 font-size: 17px;
             }
+            
+            .comment {
+                padding: 1% 2%;
+                margin-bottom: 10px;
+            }
         }
 
+        @media (max-width: 425px) {
+            #farPrevImage,
+            #farNextImage,
+            #prevImage,
+            #nextImage {
+                display: none !important;
+            }
+
+            #currentImage {
+                width: 40%;
+                height: auto;
+            }
+
+            .review-container img {
+                width: 15vw;
+                height: 15vw;
+            }
+
+            .review-container h4 {
+                margin-top: 4%;
+                font-size: 15px;
+            }
+            
+            .review-container h5 {
+                margin-top: -5px;
+                font-size: 10px;
+            }
+
+            .review-container p {
+                font-size: 10px;
+                margin-bottom: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -320,7 +364,7 @@
                                                 <h5>${item.email}</h5>
                                             </div>
                                         </div>
-                                        <div class="comment mt-2">
+                                        <div class="comment">
                                             <p>${item.comment}</p>
                                         </div>
                                     </div>`;
