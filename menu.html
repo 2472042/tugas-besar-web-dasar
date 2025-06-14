@@ -114,6 +114,11 @@
             align-items: center;
             padding: 20px;
         }
+        
+        #rightSide button
+        {
+            margin: 1vh;
+        }
 
         #makananViewName
         {
@@ -345,7 +350,8 @@
         </div>
     </div>
     <h1>Menu Makanan</h1>
-    <div id="container">
+    <div id="container" class="fade-up">
+        <!-- Cards will be dynamically generated here -->
 
     </div>
     <div id="makananView">
@@ -354,6 +360,7 @@
             <h2 id="makananViewName">Bimbimbap</h2>
             <p id="makananViewDesc">Semangkuk nasi yang lezat berisi sayuran klasik bibimbap, daging sapi, dan saus gochujang!</p>
             <button id="btnResepView">Lihat Resep</a>
+            <button class="btnKembali">Kembali ke Menu</button>
         </div>
     </div>
     <div id="resepView">
@@ -415,7 +422,7 @@
     </div>
     <div id="buttonsResepView">
         <button id="btnReviewResep">Review Resep</button>
-        <button id="btnKembali">Kembali ke Menu</button>
+        <button class="btnKembali">Kembali ke Menu</button>
         <button id="btnCloseResepView">Tutup Resep</button>
     </div>  
     <footer>
@@ -490,13 +497,44 @@
             $("#btnReviewResep").on("click", function() {
                 window.location.href = "ReviewMenu.html";
             });
+            // for each btn kembali
 
-            $("#btnKembali").on("click", function() {
+            $(".btnKembali").on("click", function() {
+                $("#makananView").hide();
                 $("#resepView").hide();
                 $("#buttonsResepView").hide();
                 $("#container").show();
             });
         });
     </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => 
+        {
+            const observer = new IntersectionObserver((up) => {
+                up.forEach(item => {
+                if (item.isIntersecting) {
+                    item.target.classList.add('visible');
+                    observer.unobserve(item.target);
+                }
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    <style>
+        .fade-up {
+        opacity: 0;
+            transform: translateY(40px); 
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0); 
+        }
+    </style>
 </body>
 </html>
