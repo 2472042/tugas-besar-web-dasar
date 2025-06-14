@@ -177,8 +177,8 @@
                 padding: 20px;
             }
             .profile-id img {
-                width: 100px; 
-                height: 100px;
+                width: 150px; 
+                height: 150px;
             }
             .profile-id .id {
                 text-align: center;
@@ -186,6 +186,9 @@
             .id span {
                 font-size: 15px;
                 text-align: center;
+            }
+            .id p {
+                font-size: 12px;
             }
         }
 
@@ -286,7 +289,7 @@
             belajar, berbagi, dan memberikan dampak positif bagi masyarakat.
         </p>
         <div class="profile-us">
-            <div class="profile-id">
+            <div class="profile-id fade-up">
                 <img src="./img/Aurel.jpg" alt="Aurellia Yemima Tomy">
                 <div class="id">
                     <span>Aurellia Yemima Tomy</span>
@@ -294,7 +297,7 @@
                     <p>Email : 2472001@maranatha.ac.id</p>
                 </div>
             </div>
-            <div class="profile-id">
+            <div class="profile-id fade-up">
                 <img src="./img/Mayang.jpg  " alt="Maria Mayang Prihariyanti Panduwardani">
                 <div class="id">
                     <span>Maria Mayang Prihariyanti Panduwardani</span>
@@ -302,7 +305,7 @@
                     <p>Email : 2472003@maranatha.ac.id</p>
                 </div>
             </div>
-            <div class="profile-id">
+            <div class="profile-id fade-up">
                 <img src="./img/Gavin.jpeg.jpg" alt="Gavin Malik Ahmad">
                 <div class="id">
                     <span>Gavin Malik Ahmad</span>
@@ -310,7 +313,7 @@
                     <p>Email : 2472042@maranatha.ac.id</p>
                 </div>
             </div>
-            <div class="profile-id">
+            <div class="profile-id fade-up">
                 <img src="" alt="Jayden  Ethanael">
                 <div class="id">
                     <span>Jaydenn Marvel Ethanael</span>
@@ -332,7 +335,7 @@
                     observer.unobserve(item.target);
                 }
                 });
-            }, { threshold: 0.1 });
+            }, { threshold: 0.2 });
 
             document.querySelectorAll('.fade-up').forEach(el => {
                 observer.observe(el);
