@@ -120,7 +120,19 @@
             border-radius: 50%;
             margin-top: 20px;
         }
+        .profile-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }   
         .profile-id {
+            background-color: #F16767;
+            width: 35%;
+            max-width: 100%;
+            text-align: left;
+            padding: 1% 2% 2% 2%;
+            border-radius: 20px;
             display: flex;
             align-items: center; 
             justify-content: center;
@@ -142,16 +154,37 @@
             font-size: 14px;
         }
 
+        .id span{
+            color: #FFF085;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .id p {
+            color: #FFF085;
+            font-size: 1em;
+            margin: 0;
+        }
+
         @media (max-width: 425px) {
+            .profile-us {
+                flex-direction: column;
+                align-items: center;
+            }
             .profile-id {
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
+                padding: 20px;
             }
             .profile-id img {
                 width: 100px; 
                 height: 100px;
             }
             .profile-id .id {
+                text-align: center;
+            }
+            .id span {
+                font-size: 15px;
                 text-align: center;
             }
         }
@@ -256,7 +289,7 @@
             <div class="profile-id">
                 <img src="./img/Aurel.jpg" alt="Aurellia Yemima Tomy">
                 <div class="id">
-                    <span>Nama : Aurellia Yemima Tomy</span>
+                    <span>Aurellia Yemima Tomy</span>
                     <p>NIM : 2472001</p>
                     <p>Email : 2472001@maranatha.ac.id</p>
                 </div>
@@ -264,16 +297,26 @@
             <div class="profile-id">
                 <img src="./img/Mayang.jpg  " alt="Maria Mayang Prihariyanti Panduwardani">
                 <div class="id">
-                    <span>Nama : Maria Mayang Prihariyanti Panduwardani</span>
+                    <span>Maria Mayang Prihariyanti Panduwardani</span>
                     <p>NIM : 2472003</p>
                     <p>Email : 2472003@maranatha.ac.id</p>
                 </div>
             </div>
             <div class="profile-id">
                 <img src="./img/Gavin.jpeg.jpg" alt="Gavin Malik Ahmad">
+                <div class="id">
+                    <span>Gavin Malik Ahmad</span>
+                    <p>NIM : 2472004</p>
+                    <p>Email : 2472042@maranatha.ac.id</p>
+                </div>
             </div>
             <div class="profile-id">
-                <img src="" alt="Jaydenn Marvel">
+                <img src="" alt="Jayden  Ethanael">
+                <div class="id">
+                    <span>Jaydenn Marvel Ethanael</span>
+                    <p>NIM : 2472078</p>
+                    <p>Email : 2472048@maranatha.ac.id</p>
+                </div>
             </div>
         </div>
     </div>
