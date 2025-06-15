@@ -452,6 +452,7 @@
                 $("#makananViewName").text(makanan.nama);
                 $("#makananViewDesc").text(makanan.deskripsi);
                 $("#makananView").show();
+                $("#btnResepView").show();
             });
 
             $("#btnResepView").on("click", function() {
@@ -480,8 +481,8 @@
                     $("#resepView ol").html(instruksiHtml);
                     $("#sumberResep a").attr("href", makanan.sumber).text(makanan.sumber);
 
-                    $("#makananView").hide();
                     $("#resepView").show();
+                    $("#btnResepView").hide();
                     $("#buttonsResepView").show();
                 }
 

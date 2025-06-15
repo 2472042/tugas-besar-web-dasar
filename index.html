@@ -60,17 +60,18 @@
             let i = 0;
             let target = document.getElementById(elementId);
             function typing() {
-                if (i < text.length) {
-                let span = document.createElement("span");
-                if (text.charAt(i) === " ") {
-                    span.innerHTML = "&nbsp;";
-                } else {
-                    span.textContent = text.charAt(i);
-                }
-                span.classList.add("bounce");
-                target.appendChild(span);
-                i++;
-                setTimeout(typing, delay);
+                if (i < text.length) 
+                {
+                    let span = document.createElement("span");
+                    if (text.charAt(i) === " ") {
+                        span.innerHTML = "&nbsp;";
+                    } else {
+                        span.textContent = text.charAt(i);
+                    }
+                    span.classList.add("bounce");
+                    target.appendChild(span);
+                    i++;
+                    setTimeout(typing, delay);
                 }
             }
             typing();
