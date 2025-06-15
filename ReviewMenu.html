@@ -305,7 +305,7 @@
             const nextImage = document.getElementById("nextImage");
             const farNextImage = document.getElementById("farNextImage");
 
-            fetch("Review.json")
+            fetch("Databases/Review.json")
                 .then(response => response.json())
                 .then(data => {
                     images = data.images;
@@ -357,7 +357,7 @@
             function loadReviews(menuId) {
                 reviewContainer.style.display = "none"; 
 
-                fetch('Review.json')
+                fetch('Databases/Review.json')
                     .then(response => response.json())
                     .then(data => {
                         const menuData = data.images.find(item => item.id === menuId);
