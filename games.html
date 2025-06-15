@@ -33,7 +33,8 @@
       { 
         width: 100%; height: 100%
       }
-      #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+      #unity-loading-bar { 
+        position: absolute; left: 50%; top: 400px; transform: translate(-50%, -50%); display: none }
       #unity-logo { width: 154px; height: 130px; background: url('TemplateData/unity-logo-light.png') no-repeat center }
       #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('TemplateData/progress-bar-empty-light.png') no-repeat center }
       #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('TemplateData/progress-bar-full-light.png') no-repeat center }
@@ -101,6 +102,15 @@
         {
           top: 50vh;
         }
+        /* Ensure loading bar is visible on mobile */
+        #unity-loading-bar {
+          display: flex;
+          position: relative;
+          top: 80px;
+            left: 87%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+        }
       }
     </style>
   </head>
@@ -137,12 +147,6 @@
 
     <div id="unity-container">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-fullscreen-button"></div>
@@ -151,6 +155,12 @@
       </div>
     </div>
 
+    <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+    </div>
     <button id="play-button">Play</button>
     <div id="descriptionMobile" class="description"></div>
 
