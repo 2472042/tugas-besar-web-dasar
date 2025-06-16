@@ -15,6 +15,9 @@
         body 
         {
             background-color: #FFFF8D;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         hr {
@@ -33,13 +36,12 @@
             font-family: "Alfa Slab One", serif;
             font-size: 30px;
         }
-
         .timeline {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 15%;
-        padding: 3% 1%;
+        justify-content: space-between;
+
+        padding: 3% 5%;
         margin-top: 40;
         }
 
@@ -65,42 +67,41 @@
         font-weight: bold;
         font-size: 20px;
         }
-
-        #mandu {
-          width: 170%;
-          height: auto;
+        .padding {
+          flex-grow: 1;
         }
-
-        #container
-        {
-          display: flex;
-          flex-direction: column;
-        }
-
         @media (max-width: 800px) {
           #container
           {
             display: flex;
             flex-direction: row;
+            width: 100vw;
+            align-items: stretch;
           }
           .timeline {
               flex-direction: column;
               align-items: center;
               gap: 30px;
+              justify-content: center;
+              width: 50%;
+          }
+          #line {
+            display: flex;
+            align-items: center;
           }
 
           hr {
-              width: 15px;
-              height: 950px;
-              margin: 20px auto;
+              width: 1.5vw;
+              height: 95%;
           }
 
           .food-item {
-              width: 50%;
+              width: 100%;
           }
 
           .food-item img {
-              width: 100%;
+
+             width: 30vw;
           }
 
           #mandu {
@@ -142,51 +143,50 @@
       <h1>Sejarah Kuliner Korea</h1>
 
     <div id="container">
-      
         <div class="timeline">
-      <div class="food-item">
-        <a href="historyPages/kimchi.html"><img src="img/kimchi.png" alt="Kimchi" /></a>
-        <p>Abad ke-7</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/bibimbap.html"><img src="img/bibimbap.png" alt="Bibimbap" /></a>
-        <p>Abad ke-16</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/kimbap.html"><img src="img/kimbap.png" alt="Kimbap" /></a>
-        <p>1930</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/ramyeon.html"><img src="img/ramyeon.png" alt="Ramyeon" /></a>
-        <p>1963</p>
-      </div>
+          <div class="food-item">
+            <a href="historyPages/kimchi.html"><img src="img/kimchi.png" alt="Kimchi" /></a>
+            <p>Abad ke-7</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/bibimbap.html"><img src="img/bibimbap.png" alt="Bibimbap" /></a>
+            <p>Abad ke-16</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/kimbap.html"><img src="img/kimbap.png" alt="Kimbap" /></a>
+            <p>1930</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/ramyeon.html"><img src="img/ramyeon.png" alt="Ramyeon" /></a>
+            <p>1963</p>
+          </div>
+        </div>
+        <div id="line">
+          <hr>
+        </div>
+        <div class="timeline">
+          <div class="food-item">
+            <a href="historyPages/mandu.html"><img src="img/mandu.png" alt="Mandu" id="mandu"/></a>
+            <p>Abad ke-14</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/Jajangmyeon.html"><img src="img/jajangmyeon.png" alt="Jjajangmyeon" /></a>
+            <p>1905</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/topoki.html"><img src="img/topoki.png" alt="Tteokbokki" /></a>
+            <p>1953</p>
+          </div>
+          <div class="food-item">
+            <a href="historyPages/dalgona.html"><img src="img/dalgona.png" alt="Dolgona" /></a>
+            <p>1970</p>
+          </div>
+        </div>
     </div>
-
-    <hr>
-
-    <div class="timeline">
-      <div class="food-item">
-        <a href="historyPages/mandu.html"><img src="img/mandu.png" alt="Mandu" id="mandu"/></a>
-        <p>Abad ke-14</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/Jajangmyeon.html"><img src="img/jajangmyeon.png" alt="Jjajangmyeon" /></a>
-        <p>1905</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/topoki.html"><img src="img/topoki.png" alt="Tteokbokki" /></a>
-        <p>1953</p>
-      </div>
-      <div class="food-item">
-        <a href="historyPages/dalgona.html"><img src="img/dalgona.png" alt="Dolgona" /></a>
-        <p>1970</p>
-      </div>
-    </div>
-
-  </div>
-
+    <div class='padding'></div>
     <footer>
         Copyright &copy; 2025 · All rights reserved · Seoul Explorer
     </footer>
+</div>
 </body>
 </html>
