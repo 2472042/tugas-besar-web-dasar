@@ -65,13 +65,20 @@
     padding: 0;
     width: 100vw;
     gap: 0;
+    border-radius: 0;
     justify-items: center;
   }
   #menus a{
     height: 45px;
-    width: auto;
+    width: 100%;
     margin: 0;
     gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menus a:hover {
+    border-radius: 0;
 
   }
   #menus > a > span {
