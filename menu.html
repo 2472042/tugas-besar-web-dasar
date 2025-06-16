@@ -458,16 +458,25 @@
                     var alatHtml = "";
                     $("#resepAlatTitle").hide();
                     if (makanan.alat && makanan.alat.length > 0) {
-                        alatHtml = `<ul>${makanan.alat.map(a => `<li>${a}</li>`).join("")}</ul>`;
+                        alatHtml = "<ul>";
+                        makanan.alat.forEach(function(a) {
+                            alatHtml += `<li>${a}</li>`;
+                        });
+                        alatHtml += "</ul>";
                         $("#resepAlatTitle").show();
                     }
 
-                    var bahanHtml = `<ul>${makanan.bahan.map(b => `<li>${b}</li>`).join("")}</ul>`;
+                    var bahanHtml = "<ul>";
+                    makanan.bahan.forEach(function(b) {
+                        bahanHtml += `<li>${b}</li>`;
+                    });
+                    bahanHtml += "</ul>";
 
-                    var instruksiHtml = makanan.Instruksi.map((instruksi, i) => {
-                        var imgHtml = makanan.imgInstruksi && makanan.imgInstruksi[i] ? `<div class='centerImage'><img src='${makanan.imgInstruksi[i]}'></div>` : "";
-                        return `<li>${instruksi}${imgHtml}</li>`;
-                    }).join("");
+                    var instruksiHtml = "";
+                    makanan.Instruksi.forEach(function(instruksi, i) {
+                        var imgHtml = (makanan.imgInstruksi && makanan.imgInstruksi[i]) ? `<div class='centerImage'><img src='${makanan.imgInstruksi[i]}'></div>` : "";
+                        instruksiHtml += `<li>${instruksi}${imgHtml}</li>`;
+                    });
 
                     $("#alatList").html(alatHtml);
                     $("#bahanList").html(bahanHtml);
