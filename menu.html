@@ -33,7 +33,6 @@
         #container
         {
             display: flex;
-            /* display: none; */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -150,7 +149,6 @@
         }
         #buttonsResepView
         {
-            /* display: none; */
             display: flex;
             justify-content: center;
             gap: 100px;
@@ -158,7 +156,6 @@
         }
         #resepView
         {
-            /* display: block; */
             display: none;
             background-color: #FFFF8D;
             padding: 20px;
@@ -211,7 +208,6 @@
             #container
             {
                 display: flex;
-                /* display: none; */
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
@@ -301,7 +297,6 @@
             }
             #buttonsResepView
             {
-                /* display: none; */
                 display: flex;
                 justify-content: center;
                 gap: 20px;
@@ -455,7 +450,6 @@
             });
 
             $("#btnResepView").on("click", function() {
-                console.log("Button Resep View clicked");
                 var makananName = $("#makananViewName").text();
                 var makanan = data.find(m => m.nama === makananName);
 
@@ -498,7 +492,6 @@
             $("#btnReviewResep").on("click", function() {
                 window.location.href = "ReviewMenu.html";
             });
-            // for each btn kembali
 
             $(".btnKembali").on("click", function() {
                 $("#makananView").hide();
